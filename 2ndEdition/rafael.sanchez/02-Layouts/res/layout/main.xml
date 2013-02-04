@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FF0000FF">
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/userlayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/tvHello"
+	    android:orientation="horizontal" 
+	    android:background="#FF00FF00">
+   		<ImageView
+		       android:id="@+id/userimage"
+		       android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+		       android:layout_margin="10dp"
+		       android:src="@drawable/user"/>
+   		<TextView
+        android:id="@+id/username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:layout_toRightOf="@id/userimage"
+        android:text="@string/username" />
+   		<TextView
+        android:id="@+id/userdescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/userimage"
+        android:layout_below="@id/username"
+        android:layout_marginBottom="20dip"
+        android:maxLines="3"
+        android:text="@string/userdescription" />
+  	</RelativeLayout>
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/buttonslayout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/userlayout"
+	    android:orientation="vertical" 
+	    android:background="#FF00FFFF">
+   
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="10dp"
+	        android:text="Ver Perfil" /> 
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="10dp"
+	        android:text="Cargar info" />
+	    <Button
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_margin="10dp"
+	        android:text="Actualizar" />
+    </LinearLayout>
+   
+    <ImageView
+	       android:id="@+id/map"
+	       android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/maps"
+           android:layout_below="@id/userlayout"
+           android:layout_toRightOf="@id/buttonslayout"
+	       android:layout_margin="10dp"
+	        />
+    <Button
+		     android:id="@+id/btLocalize"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_gravity="center"
+		     android:layout_toRightOf="@id/buttonslayout"
+		     android:layout_margin="50dp"
+		     android:layout_below="@id/map"
+	     	android:text="Localizame!" 
+	     />
+    
+    <TextView
+        android:id="@+id/bottomtext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btLocalize"
+        android:maxLines="1"
+        android:textColor="#ff0000"
+        android:scrollHorizontally="true"
+        android:text="@string/bottomtext" 
+        android:background="#00FFFFFF"/>
+    
+</RelativeLayout>
+</ScrollView>
