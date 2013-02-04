@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+             android:stretchColumns="1">
+    <TableRow>
+        <TextView
+                android:text="prueba"
+                android:padding="3dip"
+                />
+        <TextView
+                android:text="prueba 2"
+                android:padding="3dip"
+                />
+    </TableRow>
+    <TableRow>
+        <TextView
+                android:text="prueba 3"
+                android:padding="3dip"
+                />
+        <TextView
+                android:text="prueba 4"
+                android:padding="3dip"
+                />
+    </TableRow>
+</TableLayout>
