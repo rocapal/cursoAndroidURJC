@@ -1,0 +1,60 @@
+Ejercicios sobre Avtividades Clase del 1 febrero
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: unknown <bmmanso@bmmanso.hi.inet>
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   Activities/.classpath
+#	new file:   Activities/.project
+#	new file:   Activities/AndroidManifest.xml
+#	new file:   Activities/bin/Activities.apk
+#	new file:   Activities/bin/AndroidManifest.xml
+#	new file:   Activities/bin/classes.dex
+#	new file:   Activities/bin/classes/es/curso/activities/BuildConfig.class
+#	new file:   Activities/bin/classes/es/curso/activities/MainActivity$1.class
+#	new file:   Activities/bin/classes/es/curso/activities/MainActivity$2.class
+#	new file:   Activities/bin/classes/es/curso/activities/MainActivity$3.class
+#	new file:   Activities/bin/classes/es/curso/activities/MainActivity.class
+#	new file:   Activities/bin/classes/es/curso/activities/R$attr.class
+#	new file:   Activities/bin/classes/es/curso/activities/R$drawable.class
+#	new file:   Activities/bin/classes/es/curso/activities/R$id.class
+#	new file:   Activities/bin/classes/es/curso/activities/R$layout.class
+#	new file:   Activities/bin/classes/es/curso/activities/R$menu.class
+#	new file:   Activities/bin/classes/es/curso/activities/R$string.class
+#	new file:   Activities/bin/classes/es/curso/activities/R$style.class
+#	new file:   Activities/bin/classes/es/curso/activities/R.class
+#	new file:   Activities/bin/dexedLibs/android-support-v4-629bee0324f0f33dc6176606592122f2.jar
+#	new file:   Activities/bin/dexedLibs/annotations-aaf218a216ad8ae4008ba8164440725d.jar
+#	new file:   Activities/bin/jarlist.cache
+#	new file:   Activities/bin/res/drawable-hdpi/ic_launcher.png
+#	new file:   Activities/bin/res/drawable-ldpi/ic_launcher.png
+#	new file:   Activities/bin/res/drawable-mdpi/ic_launcher.png
+#	new file:   Activities/bin/res/drawable-xhdpi/ic_launcher.png
+#	new file:   Activities/bin/resources.ap_
+#	new file:   Activities/gen/es/curso/activities/BuildConfig.java
+#	new file:   Activities/gen/es/curso/activities/R.java
+#	new file:   Activities/ic_launcher-web.png
+#	new file:   Activities/libs/android-support-v4.jar
+#	new file:   Activities/proguard-project.txt
+#	new file:   Activities/project.properties
+#	new file:   Activities/res/drawable-hdpi/ic_launcher.png
+#	new file:   Activities/res/drawable-ldpi/ic_launcher.png
+#	new file:   Activities/res/drawable-mdpi/ic_launcher.png
+#	new file:   Activities/res/drawable-xhdpi/ic_launcher.png
+#	new file:   Activities/res/layout/activity_main.xml
+#	new file:   Activities/res/menu/activity_main.xml
+#	new file:   Activities/res/values/strings.xml
+#	new file:   Activities/res/values/styles.xml
+#	new file:   Activities/src/es/curso/activities/MainActivity.java
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	ActivitiesAndRelatives/
+#	Practica1/
+#	Relative/
+
