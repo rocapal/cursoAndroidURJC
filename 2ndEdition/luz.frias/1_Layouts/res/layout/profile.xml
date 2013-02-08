@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scroll_perfil"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:background="#0000ff" >
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	
+	    <TextView  
+	        android:id="@+id/saludo_usuario"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" 
+	        android:text="@string/saludoUsuario"
+		    android:gravity="center"
+	    />
+	    
+	    <RelativeLayout
+	        android:id="@+id/estado_usuario"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+				android:layout_below="@id/saludo_usuario"
+	    >
+	
+	    	<ImageView
+	    	    android:id="@+id/avatar_usuario"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+	    	    android:src="@drawable/user"
+	    	/>
+	
+	    	<TextView
+		        android:id="@+id/des1_usuario"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content" 
+		        android:text="@string/des1Usuario"
+					android:layout_toRightOf="@id/avatar_usuario"
+	    	/>
+	    	<TextView
+		        android:id="@+id/des2_usuario"
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content" 
+		        android:text="@string/des2Usuario"
+				android:maxLines="3"
+					android:layout_toRightOf="@id/avatar_usuario"
+					android:layout_below="@id/des1_usuario"
+	    	/>
+		</RelativeLayout>
+		<LinearLayout 
+		        android:id="@+id/botones_usuario"
+			    android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+	    		android:orientation="vertical"
+	    		android:padding="5dip"
+					android:layout_below="@id/estado_usuario">
+			    <Button
+			        android:id="@+id/btUser1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text = "@string/botonUsuario1"
+			        android:layout_gravity="center"       
+			    />
+			    <Button
+			        android:id="@+id/btUser2"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text = "@string/botonUsuario2"
+			        android:layout_gravity="center"       
+			    />
+			    <Button
+			        android:id="@+id/btUser3"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:text = "@string/botonUsuario3"
+			        android:layout_gravity="center"       
+			    />
+		</LinearLayout>
+		<LinearLayout
+		        android:id="@+id/mapas"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+				android:background="#0000ff"
+	    		android:orientation="vertical"
+		        android:layout_gravity="center"
+					android:layout_below="@id/estado_usuario"
+					android:layout_toRightOf="@id/botones_usuario"
+		    >
+	    	<ImageView
+	    	    android:id="@+id/mapa"
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_margin="2dip"
+	    	    android:src="@drawable/maps"
+	    	/>
+	    	<Button
+		        android:id="@+id/btMapa"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text = "@string/botonMapa"
+			/>
+		</LinearLayout>
+		<TextView 
+	        android:id="@+id/menu_usuario"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" 
+	        android:text="@string/menuUsuario"
+			android:background="#0000ff"
+		    android:gravity="center"
+				android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+</ScrollView>
