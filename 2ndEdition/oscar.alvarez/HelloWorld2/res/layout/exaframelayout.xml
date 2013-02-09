@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#0000ff"
+    >
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ficha"
+        android:gravity="center"
+        android:layout_marginTop="3dip"
+        android:layout_marginBottom="3dip"
+        android:background="#0000ff"
+        />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/userData"
+        android:layout_below="@id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff00">
+        <ImageView
+            android:src="@drawable/oscar"
+            android:id="@+id/image"
+            android:layout_height="75dip"
+            android:layout_width="75dip"
+            android:background="#ffff00"
+        />
+        <TextView
+            android:id="@+id/name"
+            android:layout_toRightOf="@id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            />
+        <TextView
+            android:id="@+id/description"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Esta es la descripción del usuario. Consta de varias líneas"
+            android:gravity="center"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            />
+
+    </RelativeLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Buttons"
+        android:orientation="vertical"
+        android:layout_below="@id/userData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#6655ff">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="2dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginBottom="1dip"
+            android:text="Ver Perfil"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="1dip"
+            android:text="Carga"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="1dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginBottom="2dip"
+            android:text="Actualizar"
+            />
+
+        </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapa"
+        android:layout_below="@id/userData"
+        android:layout_toRightOf="@id/Buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#223344">
+        <TextView
+            android:id="@+id/descriptionMapa"
+            android:layout_width="fill_parent"
+            android:height="80dip"
+            android:layout_height="wrap_content"
+            android:text="Esta es la descripción del usuario. Consta de varias líneas"
+            android:gravity="center"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            />
+        <Button
+            android:id="@+id/buttonMap"
+            android:layout_below="@id/descriptionMapa"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dip"
+            android:text="Como llegar"
+            android:layout_marginTop="2dip"
+            android:layout_marginBottom="2dip"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@id/mapa"
+        android:layout_toRightOf="@id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Footer"
+        android:gravity="center"
+        android:background="#443322"
+        />
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">fichaAndroid</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="texto01">Texto cabezera:</string>
+    <string name="texto02">Texto 02</string>
+    <string name="texto03">Texto 03</string>
+    <string name="tooltip">Texto de la imagen</string>
+    <string name="boton1">Ver Perfil</string>
+    <string name="boton2">Cargar Info</string>
+    <string name="boton3">Actualizar</string>
+    <string name="botonLocalizame">Localizame</string>
+    <string name="pie_pagina">pie de pagina, copiraight y esas cosas....</string>
+
+</resources>
