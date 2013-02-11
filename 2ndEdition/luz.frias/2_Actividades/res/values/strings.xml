@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ex02_Actividades</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="boton1">Boton 1</string>
+    <string name="boton2">Boton 2</string>
+    <string name="boton3">Boton 3</string>
+
+    <string name="titulo">Título Centrado</string>
+	<string name="contentImage">user</string>
+	<string name="nombre">Nombre de usuario</string>
+	
+	<string name="status">Descripción del estado del usuario que ocupa 2 o 3 líneas completas</string>	
+	<string name="bt1">Ver Perfil</string>
+	<string name="bt2">Cargar Info</string>
+	<string name="bt3">Actualizar</string>
+	<string name="localizame">Localizame!</string>
+	<string name="texto_largo">Este es un ejemplo de texto largo encapsulado en un TextView en modo marquesina</string>
+	
+	<string name="textoCelda1">hola1</string>
+	<string name="textoCelda2">hola2</string>
+	
+	<string name="saludoUsuario">Hola usuario!</string>
+	<string name="des1Usuario">Nombre usuario</string>
+	<string name="des2Usuario">Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario Estado 2 del usuario </string>
+	<string name="botonUsuario1">Ver Perfil</string>
+	<string name="botonUsuario2">Guardar Info</string>
+	<string name="botonUsuario3">Actualizar</string>
+	<string name="botonMapa">Localizame</string>
+	<string name="menuUsuario">Menu inferior</string>
+
+	<string name="clickBoton">Click boton</string>
+    
+</resources>
