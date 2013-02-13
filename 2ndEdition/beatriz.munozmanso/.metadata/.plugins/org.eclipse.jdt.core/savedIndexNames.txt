@@ -1,0 +1,9 @@
+INDEX VERSION 1.126+C:\Users\Beatriz Muñoz Manso\Documents\GitHub\cursoAndroidURJC\2ndEdition\beatriz.munozmanso\.metadata\.plugins\org.eclipse.jdt.core
+1030788644.index
+980964854.index
+2153786410.index
+342604.index
+1089009022.index
+3575307451.index
+1706575776.index
+2477747752.index

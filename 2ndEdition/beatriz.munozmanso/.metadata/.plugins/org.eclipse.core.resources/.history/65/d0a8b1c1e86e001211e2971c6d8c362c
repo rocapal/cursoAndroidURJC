@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.curso.activitiesandrelatives"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+    <permission android:name="@string/call"></permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="es.curso.activitiesandrelatives.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="es.curso.activitiesandrelatives.actividad1"
+            android:label="@string/app_name1" >
+            <intent-filter>
+             </intent-filter>
+        </activity>
+        <activity
+            android:name="es.curso.activitiesandrelatives.actividad2"
+            android:label="@string/app_name2" >
+            <intent-filter>
+             </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>
