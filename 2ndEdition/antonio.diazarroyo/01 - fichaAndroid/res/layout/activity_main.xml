@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffff00"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/text01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/texto01" />
+
+    <RelativeLayout
+        android:id="@+id/relativeImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text01"
+        android:background="#ffffee" >
+
+        <ImageView
+            android:id="@+id/imagen01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher"
+            android:contentDescription="@string/tooltip" />
+
+        <TextView
+            android:id="@+id/text02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@+id/imagen01"
+            android:background="#ffff33"
+            android:gravity="center_horizontal"
+            android:text="@string/texto02" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text02"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/imagen01"
+            android:background="#ffff22"
+            android:gravity="center_horizontal"
+            android:text="@string/texto03" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBotones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeImage"
+        android:background="#ffff44"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff5555"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/boton1" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/boton2" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/boton3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#ff5500"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imagen02"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/mimap"
+                android:contentDescription="@string/tooltip"
+                android:maxWidth="100dp"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/botonLocalizame" 
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btLocalizame"/>
+        </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutBotones"
+            android:background="#ff0099"
+            android:gravity="bottom"
+            android:layout_margin="5dp"
+            android:text="@string/pie_pagina" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Actividades_8_Febrero</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings_Actividad2</string>
+    <string name="menu_settings2">Settings_Actividad3</string>
+    <string name="select">Selecciona un Layout</string>
+    <string name="complex">Mix Layout</string>
+    <string name="vertical">Vertical Layout</string>
+    <string name="horizontal">Horizontal Layout</string>
+    <string name="frame">Paso de Parametros entre actividades</string>
+    <string name="relative">Relative Layout</string>
+    <string name="app_name1">Actividad Frame Layout</string>
+    <string name="app_name2">Actividad2</string>
+    <string name="app_name3">Actividad3</string>
+    <string name="app_name4">Actividad Relative Layout</string>
+    <string name="app_name5">Actividad All Layouts</string>
+    <string name="call">Emergency Call</string>
+    <string name="google">Google Web Site</string>
+    <string name="plane">Modo Avión</string>
+
+
+</resources>

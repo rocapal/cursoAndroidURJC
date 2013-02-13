@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HelloWorld2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="hello">prueba</string>
+	<string name="titulo">Título: centrado</string>
+	<string name="username">Pepito</string>
+	<string name="userdescription">Pues vamos a probar\n con multiples lineas</string>
+	<string name="iconDescription">Icono</string>
+	<string name="button1">Ver Perfil</string>
+	<string name="button2">Cargar Info</string>
+	<string name="button3">Actualizar</string>
+	<string name="button4">Localizame!</string>
+	<string name="textoinf">texto largo para poner abajo</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">3-Listas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="banner1">Listas simples</string>
+	<string name="btn_simple">Lista simple</string>
+	<string name="btn_advanced">Lista avanzada</string>
+</resources>

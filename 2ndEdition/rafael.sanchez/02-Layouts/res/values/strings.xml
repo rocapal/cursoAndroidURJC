@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloWorld2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="username">nombre de usuario</string>
+    <string name="userdescription">Aqui va texto de maximo 2 ó 3 líneas como mucho</string>
+    
+    <string name="hello">Hola, mundo</string>
+    <string name="wrap">Wrap</string>
+    <string name="fill">Fill</string>
+    <string name="update_me">Update_me</string>
+    <string name="black_on_red">Black_on_red</string>
+    
+    <string name="bottomtext">akdshfgjksadfggjksafsadfsadfsaduifasddfgsajkfgjhsdgfajksfgksajfgksafgsakgsak</string>
+    
+
+</resources>

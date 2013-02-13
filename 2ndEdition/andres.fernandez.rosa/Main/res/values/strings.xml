@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">lanzamientos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="boton1">Llamar a Google</string>
+	<string name="boton2">Mostrar telf</string>
+	<string name="boton3">Llamar a telf</string>
+</resources>
