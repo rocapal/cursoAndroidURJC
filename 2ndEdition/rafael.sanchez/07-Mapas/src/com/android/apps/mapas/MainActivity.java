@@ -1,5 +1,7 @@
 package com.android.apps.mapas;
 
+import java.util.List;
+
 import android.content.Context;
 import android.location.Location;
 import android.location.LocationListener;
@@ -12,6 +14,7 @@ import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MapView;
+import com.google.android.maps.Overlay;
 
 public class MainActivity extends MapActivity {
 	
@@ -20,6 +23,8 @@ public class MainActivity extends MapActivity {
 	private LocationManager mLocationManager = null;
 	private LocationListener mLocationListener = null;
 	private Location mLoc = null;
+	
+	private MapOverlay myMapOverlay = null; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -53,10 +58,25 @@ public class MainActivity extends MapActivity {
 	
 	private void refrescarMapa() {
 		
+		// Poner un if (mLoc == null)
 		GeoPoint geoPoint = new GeoPoint((int) (mLoc.getLatitude() * 1000000),
 										 (int) (mLoc.getLongitude() * 1000000));
 		mapControl.setZoom(18);
 		mapControl.animateTo(geoPoint);
+		
+		myMapOverlay = new MapOverlay();
+		myMapOverlay.setTexto("Hola, mundo");
+		
+		myMapOverlay.setDrawable(getResources().getDrawable(R.drawable.drawingpin));
+		myMapOverlay.setGeoPoint(geoPoint);
+
+		final List<Overlay> overlays = mapView.getOverlays();
+		overlays.clear();
+
+		overlays.add(myMapOverlay);
+		
+		
+		
 	}
 
 		
