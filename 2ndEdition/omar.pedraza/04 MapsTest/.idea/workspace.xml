@@ -23,31 +23,29 @@
     </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e483082-ed02-4e1e-894f-3d565acea09d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04 MapsTest/src/com/AGi/MapsTest/MapAsyncTask.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../04 MapsTest/src/com/AGi/MapsTest/MapOverlay.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="09c1c00f-1b81-4fda-83c0-90a831435ba1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/AGi/MapsTest/MapAsyncTask.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/AGi/MapsTest/MapOverlay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../03 ListTest/out/production/03 ListTest/03 ListTest.afp.apk" afterPath="$PROJECT_DIR$/../03 ListTest/out/production/03 ListTest/03 ListTest.afp.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../03 ListTest/out/production/03 ListTest/03 ListTest.apk" afterPath="$PROJECT_DIR$/../03 ListTest/out/production/03 ListTest/03 ListTest.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../03 ListTest/out/production/03 ListTest/03 ListTest.unaligned.apk" afterPath="$PROJECT_DIR$/../03 ListTest/out/production/03 ListTest/03 ListTest.unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../03 ListTest/.idea/misc.xml" afterPath="$PROJECT_DIR$/../03 ListTest/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../03 ListTest/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../03 ListTest/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../03 ListTest/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../03 ListTest/.idea/workspace.xml" />
     </list>
-    <ignored path="03 ListTest.iws" />
+    <ignored path="04 MapsTest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360347331772" ignored="false" />
-    <file path="/main.xml" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360348072404" ignored="false" />
-    <file path="/Main.java" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360348288056" ignored="false" />
-    <file path="/ComposedList.java" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360353439133" ignored="false" />
-    <file path="/SimpleList.java" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360350442035" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360348236448" ignored="false" />
-    <file path="/Dummy.txt" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360957181560" ignored="false" />
-    <file path="/SimpleList.xml" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360349419883" ignored="false" />
-    <file path="/simple_list.xml" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360353570033" ignored="false" />
-    <file path="/Node.java" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360351613966" ignored="false" />
-    <file path="/composed_list.xml" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360353517862" ignored="false" />
-    <file path="/composed_cell.xml" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360351410541" ignored="false" />
-    <file path="/ComposedAdapter.java" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360353504958" ignored="false" />
-    <file path="/TestAdapter.java" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360573752095" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360941596627" ignored="false" />
-    <file path="$PROJECT_DIR$/../04 MapsTest/gen/com/example/MapsTest/R.java" changelist="2e483082-ed02-4e1e-894f-3d565acea09d" time="1360946163464" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/compiler.xml" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360946398585" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/misc.xml" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360946417313" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360946398585" ignored="false" />
+    <file path="/Dummy.txt" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360957223414" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360958297609" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360947005274" ignored="false" />
+    <file path="/fragment.java" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360946602176" ignored="false" />
+    <file path="/Main.java" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360958246717" ignored="false" />
+    <file path="/MapOverlay.java" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360954282087" ignored="false" />
+    <file path="/strings.xml" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360955513311" ignored="false" />
+    <file path="/MapAsyncTask.java" changelist="09c1c00f-1b81-4fda-83c0-90a831435ba1" time="1360957609222" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,14 +100,43 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="03 ListTest" />
+    <favorites_list name="04 MapsTest" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/Main.java">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="23" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+            <state line="84" column="0" selection-start="2689" selection-end="2689" vertical-scroll-proportion="0.6557377">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapAsyncTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/MapAsyncTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="22" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapOverlay.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/MapOverlay.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="22" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,34 +148,16 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="36" selection-start="513" selection-end="513" vertical-scroll-proportion="-6.6666665">
+            <state line="5" column="51" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComposedList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/ComposedList.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="36" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/SimpleList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="11" selection-start="422" selection-end="429" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComposedAdapter.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/ComposedAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="0" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.7589286">
+            <state line="17" column="75" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -174,23 +183,17 @@
       <list>
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/com/AGi/ListTest/Main.java" />
-        <option value="$PROJECT_DIR$/res/layout/SimpleList.xml" />
-        <option value="$PROJECT_DIR$/src/com/AGi/ListTest/SimpleList.java" />
-        <option value="$PROJECT_DIR$/res/layout/composed_cell.xml" />
-        <option value="$PROJECT_DIR$/src/com/AGi/ListTest/Node.java" />
-        <option value="$PROJECT_DIR$/src/com/AGi/ListTest/ComposedList.java" />
-        <option value="$PROJECT_DIR$/src/com/AGi/ListTest/ComposedAdapter.java" />
-        <option value="$PROJECT_DIR$/res/layout/composed_list.xml" />
-        <option value="$PROJECT_DIR$/res/layout/simple_list.xml" />
-        <option value="$PROJECT_DIR$/src/com/AGi/ListTest/TestAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/AGi/MapsTest/MapOverlay.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/AGi/MapsTest/MapAsyncTask.java" />
+        <option value="$PROJECT_DIR$/src/com/AGi/MapsTest/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1280" />
-    <option name="height" value="706" />
+    <option name="height" value="708" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -218,33 +221,31 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -252,31 +253,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ListTest" />
+              <option name="myItemId" value="MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -290,11 +295,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03 ListTest" />
+              <option name="myItemId" value="04 MapsTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -308,12 +313,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
-    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
@@ -324,19 +331,14 @@
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="2.3.3" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="4.1.2" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/res/drawable" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Android Application.03 ListTest">
+  <component name="RunManager" selected="Android Application.04 MapsTest">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -368,19 +370,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -406,6 +395,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -457,9 +459,9 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="03 ListTest" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="03 ListTest" />
-      <option name="ACTIVITY_CLASS" value="com.AGi.ListTest.Main" />
+    <configuration default="false" name="04 MapsTest" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="04 MapsTest" />
+      <option name="ACTIVITY_CLASS" value="com.AGi.MapsTest.Main" />
       <option name="MODE" value="specific_activity" />
       <option name="DEPLOY" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
@@ -475,7 +477,7 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Android Application.03 ListTest" />
+      <item index="0" class="java.lang.String" itemvalue="Android Application.04 MapsTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -504,38 +506,38 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2e483082-ed02-4e1e-894f-3d565acea09d" name="Default" comment="" />
-      <created>1360347328576</created>
-      <updated>1360347328576</updated>
+      <changelist id="09c1c00f-1b81-4fda-83c0-90a831435ba1" name="Default" comment="" />
+      <created>1360946390533</created>
+      <updated>1360946390533</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="706" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="708" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67064846" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33105803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282313" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.67064846" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.670068" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.670068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -600,109 +602,56 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="11" selection-start="3107" selection-end="3107" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/MapAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/MapOverlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="22" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
+        <state line="5" column="51" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="42" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+        <state line="17" column="75" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/Node.java">
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="277" selection-end="277" vertical-scroll-proportion="0.28688523">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/composed_cell.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="835" selection-end="835" vertical-scroll-proportion="0.9778481">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/simple_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="297" selection-end="297" vertical-scroll-proportion="-4.4444447">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/composed_list.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="297" selection-end="297" vertical-scroll-proportion="-4.4444447">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/ComposedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="980" selection-end="980" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/SimpleList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="422" selection-end="429" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/AGi/ListTest/Manifest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/AGi/ListTest/BuildConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="97" selection-end="97" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/AGi/ListTest/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="23" selection-start="409" selection-end="409" vertical-scroll-proportion="0.0">
+        <state line="17" column="75" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -712,14 +661,42 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="513" selection-end="513" vertical-scroll-proportion="-6.6666665">
+        <state line="5" column="51" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/AGi/ListTest/ComposedAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/MapOverlay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.7589286">
+        <state line="44" column="22" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../../../../../APIs/android-sdk-macosx/platforms/android-10/android.jar!/android/app/Dialog.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="16" selection-start="970" selection-end="970" vertical-scroll-proportion="0.90163934" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/MapAsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/AGi/MapsTest/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="2689" selection-end="2689" vertical-scroll-proportion="0.6557377">
           <folding />
         </state>
       </provider>
