@@ -5,9 +5,20 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     
-    <string name="boton1">Boton 1</string>
-    <string name="boton2">Boton 2</string>
-    <string name="boton3">Boton 3</string>
+    <string name="boton1">Actividad 1</string>
+    <string name="boton2">Actividad 2</string>
+    <string name="boton3">Actividad 3</string>
+    
+    <string name="boton4">Explorador</string>
+    <string name="boton5">Llamar</string>
+    
+    <string name="txActividad1">Contenido Actividad 1</string>
+    <string name="txMensaje1">Mensaje Actividad 1 cambiado</string>
+    <string name="txActividad2">Contenido Actividad 2</string>
+    <string name="txActividad3">Contenido Actividad 3</string>
+    
+    <string name="menu1">Menu 1</string>
+    <string name="menu2">Menu 2</string>
 
     <string name="titulo">Título Centrado</string>
 	<string name="contentImage">user</string>

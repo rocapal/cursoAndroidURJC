@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#FF0000FF"
+	     >
+	
+	    <TextView
+	        android:id="@+id/Texto"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:textColor="#ffffffff"
+	        android:text="@string/hola_layout"
+	        />
+	
+		<LinearLayout
+		    android:id="@+id/fila_widget"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/Texto"
+		    android:background="#ff00ff00"
+		    android:orientation="horizontal" >
+	
+		    <ImageView
+		        android:id="@+id/imagen1"
+		        android:src="@drawable/ico"
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity="center_vertical"/>
+			
+	        <LinearLayout
+	            android:id="@+id/Tabla"
+	            android:orientation="vertical"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_width="0dip"
+		    	android:layout_height="wrap_content"
+		    	android:layout_weight="10">
+		    	
+				<TextView 
+				    android:id="@+id/Texto1"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:maxLines="1"
+					android:text="@string/textoA"	
+					/>
+				
+							
+				<TextView 
+				    android:id="@+id/Texto2"
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				    android:gravity="left"
+				    android:layout_gravity="center"		    
+				    android:maxLines="4"
+				    android:text="@string/textoB"
+				    />
+				
+				</LinearLayout> 
+			  
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/columna_botones"
+		    android:layout_below="@id/fila_widget"
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="#ff00ff00" >
+		    
+		    <Button
+		        android:id="@+id/boton1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:layout_margin="20dip"
+		        android:text="@string/boton1"/>
+			<Button
+		        android:id="@+id/boton2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:layout_margin="20dip"
+		        android:text="@string/boton2"/>
+			<Button
+		        android:id="@+id/boton3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:layout_margin="20dip"
+		        android:text="@string/boton3"/>
+		</LinearLayout>
+		
+		<RelativeLayout
+		    android:id="@+id/columna_imagen"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/fila_widget"
+		    android:layout_toRightOf="@id/columna_botones"
+		    android:background="#ff000000"
+		    android:orientation="vertical" >
+	
+			<ImageView
+			    android:id="@+id/imagen_central"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:src="@drawable/taro0" />
+	
+			
+		    
+		</RelativeLayout>
+		
+		<TextView
+			    android:id="@+id/textoinf"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_centerHorizontal="true"
+			    android:textColor="#ff0000"
+			    android:text="@string/textoinferior" />
+				
+	</RelativeLayout>
+</ScrollView>

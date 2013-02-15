@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent" >
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:stretchColumns="1"
+	    android:background="#ffffff"
+	    >
+	    <TextView
+	    	android:id="@+id/prueba"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="15dip"
+		  	android:layout_marginTop="15dip"
+	        android:gravity="center"
+	        android:textStyle="bold"
+	        android:textScaleX="2"
+	        
+	        android:text="Esto es una prueba" />    
+	     
+	    <RelativeLayout
+	        android:id="@+id/imagenytext"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#ffffff"
+			android:layout_below="@+id/prueba" >
+			
+			<ImageView
+			    android:id="@+id/imagen"
+			    android:layout_width ="wrap_content" 
+				android:layout_height ="wrap_content"
+				android:layout_marginTop="15dip"
+				android:layout_below="@+id/imagenytext"
+				android:src="@drawable/ic_launcher"	/>	
+				
+			<TextView 
+			    android:id="@+id/usuarioname"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/imagenytext"
+				android:layout_toRightOf="@+id/imagen"
+				android:layout_marginBottom="10dip"
+				android:layout_marginTop="10dip"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:text="Nombre de usuario" />
+			<TextView 
+			    android:id="@+id/usuarioLineas"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/usuarioname"
+				android:layout_toRightOf="@+id/imagen"
+				android:layout_marginBottom="10dip"
+				android:gravity="center"
+				android:maxLines="3"
+				android:textStyle="italic"
+				android:text="Descripción del estado del usuario que ocupa 2 o tres líneas completas" />
+		</RelativeLayout>
+		<LinearLayout
+		    android:orientation="vertical" 
+		    android:id="@+id/botones"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/imagenytext"
+		    android:background="#ffffff"
+		    >
+	
+			<Button
+			    android:id="@+id/boton1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+				android:layout_marginLeft="10dip"
+		  	    android:layout_marginRight="10dip"
+		  	    android:layout_marginTop="15dip"
+			    android:text="Ver Perfil" />
+		    
+		    <Button
+		       android:id="@+id/boton2" 
+		       android:layout_height="wrap_content"
+			   android:layout_width="fill_parent"
+			   android:layout_marginLeft="10dip"
+		  	   android:layout_marginRight="10dip"
+		  	   android:layout_marginTop="15dip"
+		  	   android:text="Cargar Info"
+			   
+		     />        
+		     
+		    <Button
+		       android:id="@+id/boton3" 
+		       android:layout_height="wrap_content"
+			   android:layout_width="fill_parent"
+			   android:layout_marginLeft="10dip"
+		  	   android:layout_marginRight="10dip"
+		  	   android:layout_marginTop="15dip"
+			   android:layout_marginBottom="15dip"
+			   android:text="Actualizar"
+		     />        
+		     
+		</LinearLayout>
+	
+	  	<ImageView
+	  	    android:id="@+id/mapa"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_below="@+id/imagenytext"
+	  	    android:layout_toRightOf="@+id/botones"
+	  	    android:layout_marginLeft="20dip"
+	  	    android:layout_marginRight="20dip"
+	  	    android:layout_marginTop="10dip"
+	  	    android:layout_marginBottom="10dip"
+	  	    android:background="#ffffff"
+	  	    android:src="@drawable/ic_launcher"
+	  	    android:gravity="center" />
+	
+	  	<Button
+	  	    android:id="@+id/mapaboton"
+	  	    android:layout_width="fill_parent"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_below="@+id/mapa"
+	  	    android:layout_toRightOf="@+id/botones"
+	  	    android:gravity="center"
+	  	    android:layout_marginLeft="40dip"
+	  	    android:layout_marginRight="40dip"
+	  	    android:layout_marginTop="10dip"
+	  	    android:layout_marginBottom="10dip"
+	  	    android:text="Localizame!" />
+	  	<TextView 
+	  	    android:id="@+id/textfinal"
+			android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content"	
+	    	android:layout_centerHorizontal="true"							
+			android:text="Esto es un ejemplo de texto largo encapsulado"
+			android:textColor="#ff0000"		
+			android:layout_alignParentBottom="true"	>
+		</TextView>    
+	  	    
+	
+	</RelativeLayout>
+</ScrollView>

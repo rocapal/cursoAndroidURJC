@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActivitiesAndRelatives</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="select">Selecciona un Layout</string>
+    <string name="complex">Mix Layout</string>
+    <string name="vertical">Vertical Layout</string>
+    <string name="horizontal">Horizontal Layout</string>
+    <string name="frame">Frame Layout</string>
+    <string name="relative">Relative Layout</string>
+    <string name="google">Google Web Site</string>
+    <string name="app_name1">Actividad Frame Layout</string>
+
+</resources>

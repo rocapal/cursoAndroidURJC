@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;layout&apos;&#x0D;&#x0A;- Original project: &apos;FirstApplication&apos;&#x0D;&#x0A;- Destination element: &apos;layout&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     linearlayout_ver.xml&#x0D;&#x0A;     framelayout.xml&#x0D;&#x0A;     linearlayout_hor.xml&#x0D;&#x0A;- Update references to refactored element" description="Move files" element1="res/layout/linearlayout_ver.xml" element2="res/layout/framelayout.xml" element3="res/layout/linearlayout_hor.xml" files="3" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1359992597965" target="/ActivitiesAndRelatives/res/layout" units="0" version="1.0"/>
+</session>

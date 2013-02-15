@@ -1,0 +1,18 @@
+package es.curso.activitiesandrelatives;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class actividad1 extends Activity{
+	
+	@Override
+
+	public void onCreate(Bundle savedInstanceState) {
+
+	super.onCreate(savedInstanceState);
+	setContentView(R.layout.framelayout);
+	}
+	Button Boton1 = this.findViewById(R.id.Goog);
+	
+	
+}

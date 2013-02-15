@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HolaLayouts</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="hola_layout">Hola Pepe</string>
+	<string name="textoA">Nombre de usuario</string>
+	<string name="textoB">Descripción del estado del \nusuario que ocupa 2 o 3 líneas \ncompletas</string>
+	<string name="boton1">Botón 1</string>
+	<string name="boton2">Botón 2</string>
+	<string name="boton3">Botón 3</string>
+	<string name="textoinferior">Texto de abajo</string>
+	<string name="cambio">Yo ya no soy Pepe</string>
+	
+</resources>

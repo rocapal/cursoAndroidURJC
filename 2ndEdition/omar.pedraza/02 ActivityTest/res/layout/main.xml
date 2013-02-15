@@ -1,34 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:background="#000000"
+              android:background="#0000ff"
               android:id="@+id/buttons_view"
               android:layout_height="fill_parent"
               android:layout_width="fill_parent"
               android:orientation="vertical">
     <Button
-            android:id="@+id/url_button"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dip"
-            android:layout_width="wrap_content"
-            android:text="Open URL"
-            />
+        android:id="@+id/url_button"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_width="fill_parent"
+        android:text="Open URL"
+    />
     <Button
-            android:id="@+id/phone_button"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dip"
-            android:layout_width="wrap_content"
-            android:text="Phone View"
-            />
+        android:id="@+id/phone_button"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_width="fill_parent"
+        android:text="Phone View"
+    />
     <Button
-            android:id="@+id/call_button"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dip"
-            android:layout_width="wrap_content"
-            android:text="Phone Call"
-            />
+        android:id="@+id/call_button"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_width="fill_parent"
+        android:text="Phone Call"
+    />
+    <Button
+        android:id="@+id/activity_1_button"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_width="fill_parent"
+        android:text="Activity 1"
+    />
+    <Button
+        android:id="@+id/activity_2_button"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_width="fill_parent"
+        android:text="Activity 2"
+    />
+    <Button
+        android:id="@+id/activity_3_button"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_width="fill_parent"
+        android:text="Activity 3"
+    />
 </LinearLayout>
 
