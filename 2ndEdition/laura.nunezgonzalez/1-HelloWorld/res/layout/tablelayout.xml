@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+    
+    <TableRow >
+        <TextView
+            android:text="@string/texto_row1"
+            android:padding="3dip"/> 
+                   
+        <Button
+            android:text="@string/texto_row2"
+            android:padding="3dip"/> 
+	    
+        
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:text="@string/texto_row3"
+            android:padding="3dip"/> 
+                   
+        <TextView
+            android:text="@string/texto_row4"
+            android:padding="3dip"/> 
+	    
+    </TableRow>
+    
+        
+    <TableRow >
+        <Button
+            android:text="@string/texto_row2"
+            android:padding="3dip"/>         
+    </TableRow>
+
+    <TableRow >
+        <Button
+            android:text="@string/texto_row2"
+            android:padding="3dip"/>         
+        <Button
+            android:text="@string/texto_row2"
+            android:padding="3dip"/>           
+        <Button
+            android:text="@string/texto_row2"
+            android:padding="3dip"/>                               
+        <Button
+            android:text="@string/texto_row2"
+            android:padding="3dip"/>                     
+    </TableRow>
+    
+
+
+</TableLayout>

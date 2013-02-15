@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <TextView  
+        android:id="@+id/hello"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:background="#000000"
+		android:textColor="#ffffff" 
+        android:text="@string/hello_world"
+    />
+        
+    <TextView
+		android:id="@+id/black_on_red"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/hello"
+		android:background="#ff0000"
+		android:textColor="#000000"
+		android:text="@string/onred"
+	/>
+	
+    <TextView
+		android:id="@+id/update_me"
+		android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/black_on_red"
+        android:background="#00ff00"
+		android:textColor="#000000"
+		android:text="@string/ongreen"
+	/> 
+	
+    <TextView
+		android:id="@+id/left_wrap"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update_me"
+        android:background="#0000ff"
+		android:textColor="#000000"
+		android:text="@string/wrap"
+	/>
+    
+    <TextView
+		android:id="@+id/right_fill"
+		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+	    android:layout_below="@id/update_me"
+	    android:layout_toRightOf="@id/left_wrap"
+	    android:background="#ff0000"
+		android:textColor="#000000"
+		android:text="@string/fill"
+	/>
+	
+    <TextView
+		android:id="@+id/deg1"
+		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+	    android:layout_below="@id/right_fill"
+	    android:background="#1e90ff"
+		android:textColor="#000000"
+		android:text="@string/deg1"
+	/>
+	
+    	
+	<TextView
+		android:id="@+id/deg2"
+		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+	    android:layout_below="@id/right_fill"
+	    android:layout_toRightOf="@id/deg1"
+	    android:background="#87ceeb"
+		android:textColor="#000000"
+		android:text="@string/deg2"
+	/>
+
+	<TextView
+		android:id="@+id/deg3"
+		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+	    android:layout_below="@id/right_fill"
+	    android:layout_toRightOf="@id/deg2"
+	    android:background="#afeeee"
+		android:textColor="#000000"
+		android:text="@string/deg3"
+	/>
+		
+	<TextView
+		android:id="@+id/deg4"
+		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+	    android:layout_below="@id/right_fill"
+	    android:layout_toRightOf="@id/deg3"
+	    android:background="#e0ffff"
+		android:textColor="#000000"
+		android:text="@string/deg4"
+	/>
+			
+</RelativeLayout>
