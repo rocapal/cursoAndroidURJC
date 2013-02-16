@@ -7,5 +7,9 @@
     <string name="button1_text">Button 01</string>
     <string name="button2_text">Button 02</string>
     <string name="button3_text">Button 03</string>
+    <string name="button_activity">Go Activity</string>
+    <string name="button_activity_02">Activity 02</string>
+    <string name="button_activity_03">Activity 03</string>
+    <string name="hola_caracola">Hola Caracola</string>
 
 </resources>
