@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MisListas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="lists">Ejemplos de listas</string>
+    <string name="easy_list">Lista Sencilla:</string>
+    <string name="complex_list">Lista Compleja:</string>
+    <string name="easy_list_button">simple</string>
+    <string name="complex_list_button">compleja</string>
+    <string name="tooltip">logo universidad</string>
+
+</resources>
