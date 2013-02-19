@@ -7,6 +7,6 @@
     <string name="map_key_uni_PC">0aogr3VNvR8WHMY5ttft1Qk3V_HcYfnBuxOIJHA</string>
     <string name="map_key_casa_PC">0aogr3VNvR8WvtWEvc91eCAirSS6Or5le6voN-A</string>
 	<string name="mPdText">Esperando coordenadas GPS</string>
-	<string name="mPdTitle">GPS...</string>
+	<string name="mPdTitle">GPS&#8230;</string>
 	
 </resources>
