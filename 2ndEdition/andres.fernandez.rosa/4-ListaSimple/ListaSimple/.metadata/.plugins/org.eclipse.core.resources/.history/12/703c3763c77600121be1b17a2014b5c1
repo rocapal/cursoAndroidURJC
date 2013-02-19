@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListaCompleja</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="titulo1">Animal Marino</string>
+	<string name="titulo2">Animal Terrestre</string>
+	<string name="titulo3">Animal Volador</string>
+	
+</resources>

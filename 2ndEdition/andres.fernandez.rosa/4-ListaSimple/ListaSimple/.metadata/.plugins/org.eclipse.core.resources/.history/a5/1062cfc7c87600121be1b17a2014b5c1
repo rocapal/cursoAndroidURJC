@@ -1,0 +1,93 @@
+package com.example.listacompleja;
+
+import java.util.ArrayList;
+
+import android.R.integer;
+import android.R.string;
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+public class Main extends ListActivity {
+
+	
+	// Método onCreate necesario en todas las actividades de Android
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		setDatos();
+
+		mAdaptador = new MiAdaptador(this);
+		setListAdapter(mAdaptador);
+
+		// Definimos la estructura de los items de la lista
+		public class Nodo {
+			public string mTitulo;
+			public string mExplicacion;
+			public Integer mImagen;
+		}
+
+		// Generamos un ArrayList de tipo Nodo para mostrar todos los items
+		private static ArrayList<Nodo> mArray = new ArrayList<Nodo>();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+	
+	
+	
+	private void setDatos()
+	{
+		// Limpiamos el Array
+		mArray.clear();
+		
+		// Generamos una instancia de Nodo (creamos 1 OBJETO de clase Nodo)
+		Nodo Nodo1 = new Nodo();
+		// Asignamos el atributo titulo al objeto Nodo1
+		Nodo1.mTitulo = this.getResources().getString(R.string.titulo1);
+		Nodo1.mExplicacion = this.getResources().getString(R.string.explicacion1);
+		Nodo1.mImagen = R.drawable.r1;
+		
+		
+	}
+
+	// Creamos la nueva clase MiAdaptador extendiendo de BaseAdapter e
+	// implementamos
+	// métodos
+	public static class MiAdaptador extends BaseAdapter {
+
+		@Override
+		public int getCount() {
+			// gerCount retorna el nº de items que tiene la lista
+			return 0;
+		}
+
+		@Override
+		public Object getItem(int position) {
+			// funcion que devuelve un item concreto
+			return null;
+		}
+
+		@Override
+		public long getItemId(int position) {
+			// devuelve los id de los item
+			return 0;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			// Este método getView devuelve una vista del item seleccionado
+			return null;
+		}
+
+	}
+
+}

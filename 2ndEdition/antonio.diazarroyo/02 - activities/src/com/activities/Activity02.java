@@ -23,9 +23,6 @@ public class Activity02 extends Activity {
 	@Override
 	protected void onStop() {
 		Log.d("etiqueta", "onpause.............");
-		Intent intent = new Intent();
-		intent.putExtra(MainActivity.PARAM, 20);
-		setResult(RESULT_OK, intent);
 		super.onStop();
 	}
 }
