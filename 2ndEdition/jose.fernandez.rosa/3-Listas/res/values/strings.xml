@@ -7,4 +7,5 @@
 	<string name="banner1">Listas simples</string>
 	<string name="btn_simple">Lista simple</string>
 	<string name="btn_advanced">Lista avanzada</string>
+	<string name="Icon">Icon</string>
 </resources>

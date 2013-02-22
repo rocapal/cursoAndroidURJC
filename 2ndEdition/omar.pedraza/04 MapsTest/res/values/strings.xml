@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MapsTest</string>
+
+    <string name="map_dialog">Updating GPS position...</string>
+    <string name="map_key">0KXDf8jbjcJX-mlG78Dv83UJCYJIjJ84BbdDBMw</string>
+</resources>

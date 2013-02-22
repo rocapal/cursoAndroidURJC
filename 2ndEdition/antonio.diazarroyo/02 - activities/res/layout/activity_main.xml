@@ -24,6 +24,24 @@
         android:layout_height="wrap_content"
         android:text="@string/button2_text">
     </Button>
+    <Button 
+        android:id="@+id/activityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_activity">
+    </Button>
+    <Button 
+        android:id="@+id/activity02Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_activity_02">
+    </Button>
+    <Button 
+        android:id="@+id/activity03Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_activity_03">
+    </Button>
 
     
 </LinearLayout>

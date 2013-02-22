@@ -24,9 +24,6 @@ public class MyAdapter extends BaseAdapter {
 			this.mImageResource = imageResource;
 		}
 
-		public Node() {
-		}
-
 	}
 
 	public ArrayList<Node> datos = new ArrayList<Node>();
@@ -61,22 +58,26 @@ public class MyAdapter extends BaseAdapter {
 
 		View view = null;
 
-		LayoutInflater inflater = (LayoutInflater) mContext
-				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		if (convertView == null) {
+			LayoutInflater inflater = (LayoutInflater) mContext
+					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-		view=  inflater.inflate(R.layout.list_node_view, null);
-		
+			view = inflater.inflate(R.layout.list_node_view, null);
+
+		} else {
+			view = convertView;
+		}
+
 		TextView Title = (TextView) view.findViewById(R.id.title);
 		TextView Description = (TextView) view.findViewById(R.id.description);
 		ImageView icon = (ImageView) view.findViewById(R.id.image);
-		
-		Title.setText(datos[position].mTitle);
-		Description.setText(datos[position].mDescription);
-		icon.setImageDrawable(R.drawable.ic_launcher);
-		
+
+		Title.setText(datos.get(position).mTitle);
+		Description.setText(datos.get(position).mDescription);
+		icon.setImageResource(R.drawable.ic_launcher);
+
 		return view;
-		
-		
+
 	}
 
 }

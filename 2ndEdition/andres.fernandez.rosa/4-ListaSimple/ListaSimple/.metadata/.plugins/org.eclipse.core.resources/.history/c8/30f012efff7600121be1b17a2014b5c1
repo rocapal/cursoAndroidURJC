@@ -1,0 +1,143 @@
+package com.example.listacompleja;
+
+import java.util.ArrayList;
+
+import android.R.string;
+import android.app.ListActivity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+public class Main extends ListActivity {
+
+	// Definimos la variable mAdaptador del tipo MiAdaptador y la ponemos a null
+	private MiAdaptador mAdaptador = null;
+
+	// Definimos la estructura de los items de la lista
+	public class Nodo {
+		public string mTitulo;
+		public string mExplicacion;
+		public Integer mImagen;
+	}
+
+	// Generamos un ArrayList de tipo Nodo para mostrar todos los items
+	private static ArrayList<Nodo> mArray = new ArrayList<Nodo>();
+
+	// Método onCreate necesario en todas las actividades de Android
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// Realizamos la llamada al método padre de onCreate
+		super.onCreate(savedInstanceState);
+
+		// Generamos un nuevo método para establecer los datos
+		setDatos();
+
+		// Generamos un nuevo adaptador (nuestro), utilizando
+		// el contexto this para poder utilizar posteriormente las imágenes
+		mAdaptador = new MiAdaptador(this);
+
+		// Lo seleccionamos para nuestra lista
+		setListAdapter(mAdaptador);
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	private void setDatos() {
+		// Limpiamos el Array
+		mArray.clear();
+
+		// Generamos una instancia de Nodo (creamos 1 OBJETO de clase Nodo)
+		Nodo Nodo1 = new Nodo();
+		// Asignamos el atributo titulo al objeto Nodo1
+		Nodo1.mTitulo = this.getResources().getString(R.string.titulo1);
+		// Asignamos el atributo explicacion al objeto Nodo1
+		Nodo1.mExplicacion = this.getResources().getString(R.string.explicacion1);
+		// Cargamos la imagen de Ndo1
+		Nodo1.mImagen = R.drawable.r1;
+		// Cargamos en el Array el Nodo1
+		mArray.add(Nodo1);
+
+		// Realizamos las mismas operaciones para todos los nodos
+		Nodo Nodo2 = new Nodo();
+
+		Nodo2.mTitulo = this.getResources().getString(R.string.titulo2);
+		Nodo2.mExplicacion = this.getResources().getString(R.string.explicacion2);
+		Nodo2.mImagen = R.drawable.r2;
+
+		mArray.add(Nodo2);
+
+		Nodo Nodo3 = new Nodo();
+
+		Nodo3.mTitulo = this.getResources().getString(R.string.titulo3);
+		Nodo3.mExplicacion = this.getResources().getString(R.string.explicacion3);
+		Nodo3.mImagen = R.drawable.r3;
+
+		mArray.add(Nodo3);
+
+	}
+
+	// Creamos la nueva clase MiAdaptador extendiendo de BaseAdapter e
+	// implementamos
+	// métodos
+	public static class MiAdaptador extends BaseAdapter {
+
+		private Context mContexto;
+		public MiAdaptador(Context c)
+		{
+			mContexto = c;
+		}
+
+		@Override
+		public int getCount() {
+			// gerCount retorna el nº de items que tiene la lista
+			return mArray.size();
+		}
+
+		@Override
+		public Object getItem(int position) {
+			// funcion que devuelve un item concreto
+			return mArray.get(position);
+		}
+
+		@Override
+		public long getItemId(int position) {
+			// devuelve los id de los item
+			return 0;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			// Este método getView devuelve una vista del item seleccionado
+			
+			View vista = null;
+			
+			if (convertView==null){
+				
+				// Método que transforma un archivo xml en 1 View
+				LayoutInflater inflater = (LayoutInflater) mContexto.
+				getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			
+			vista = inflater.inflate(R.layout.vgenerica, null);
+				
+			} else {
+				vista = convertView;
+			}
+			
+			return vista;
+		}
+
+	}
+
+	
+	
+}
