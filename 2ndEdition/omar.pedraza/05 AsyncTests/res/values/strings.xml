@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AsyncTests</string>
+
+    <string name="service_text">Service running during %s seconds</string>
+    <string name="thread_toast_message">Running thread on background during %s seconds</string>
+    <string name="timer_toast_message">Running thread on background</string>
+</resources>
