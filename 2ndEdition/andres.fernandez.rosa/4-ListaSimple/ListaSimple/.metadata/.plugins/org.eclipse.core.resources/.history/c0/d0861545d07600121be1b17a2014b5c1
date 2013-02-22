@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPrincipal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    
+	<ImageView 
+	    android:id="@+id/imagenNodo"
+	    android:layout_width="80dip"
+	    android:layout_height="80dip"
+	    android:paddingTop="10dip"
+	    android:layout_margin="10dip"
+	    >
+	    
+	<LinearLayout
+	    
+	    android:orientation="vertical"
+	    android:layout>
+	    
+	</LinearLayout>
+</LinearLayout>

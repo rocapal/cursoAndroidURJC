@@ -9,9 +9,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class Main extends Activity {
-
-
-	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

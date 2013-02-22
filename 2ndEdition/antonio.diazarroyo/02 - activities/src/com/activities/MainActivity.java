@@ -27,7 +27,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		Button b1 = (Button)this.findViewById(R.id.firstButton);
 		b1.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
@@ -36,7 +35,6 @@ public class MainActivity extends Activity {
 		});
 		Button b2 = (Button)this.findViewById(R.id.secondButton);
 		b2.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				Intent openDialer = new Intent (Intent.ACTION_VIEW);
@@ -46,7 +44,6 @@ public class MainActivity extends Activity {
 		});
 		Button b3 = (Button)this.findViewById(R.id.thirdButton);
 		b3.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				Intent openDialer = new Intent (Intent.ACTION_CALL);
@@ -56,7 +53,6 @@ public class MainActivity extends Activity {
 		});
 		Button bActivity = (Button)this.findViewById(R.id.activityButton);
 		bActivity.setOnClickListener(new OnClickListener() {
-			
 			@Override
 			public void onClick(View v) {
 				Intent newActivityIntent = new Intent (MainActivity.this, NewActivity.class);
@@ -79,7 +75,7 @@ public class MainActivity extends Activity {
 		bActivity03.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent (MainActivity.this, Activity02.class);
+				Intent intent = new Intent (MainActivity.this, Activity03.class);
 				startActivityForResult(intent, FROM_ACTIVITY_3);
 			}
 		});
@@ -91,7 +87,6 @@ public class MainActivity extends Activity {
 		case R.id.menu1:
 			Intent intent02 = new Intent (MainActivity.this, Activity02.class);
 			startActivityForResult(intent02, FROM_ACTIVITY_2);
-			
 			return true;
 		case R.id.menu2:
 			Intent intent03 = new Intent (MainActivity.this, Activity03.class);

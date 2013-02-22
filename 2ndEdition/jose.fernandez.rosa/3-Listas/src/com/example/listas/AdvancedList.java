@@ -1,11 +1,10 @@
 package com.example.listas;
 
-import java.util.List;
-
-import com.example.listas.MyAdapter.Node;
-
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ListView;
+import android.widget.Toast;
 
 public class AdvancedList extends ListActivity {
 
@@ -27,5 +26,10 @@ public class AdvancedList extends ListActivity {
 		for (Integer i = 0; i <= 5; i++)
 			mAdapter.datos.add(mAdapter.new Node("Nodo " + i.toString(),
 					"Este es el nodo" + i.toString(), R.drawable.ic_launcher));
+	}
+	
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		Toast.makeText(this,"Pulsado el item en la posición " + position, Toast.LENGTH_SHORT).show();
 	}
 }

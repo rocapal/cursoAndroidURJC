@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ListaCompleja</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="titulo1">Animal Marino</string>
+	<string name="titulo2">Animal Terrestre</string>
+	<string name="titulo3">Animal Volador</string>
+	<string name="explicacion1">Animales que viven en el agua</string>
+	<string name="explicacion2">Animales que viven en la tierra</string>
+	<string name="explicacion3">Animales que vuelan por el aire</string>
+	
+</resources>

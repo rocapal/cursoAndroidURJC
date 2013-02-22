@@ -5,10 +5,14 @@
     android:orientation="vertical"
     >
 	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
 	    android:id="@+id/btn_simple"
 	    android:text="@string/btn_simple" 
 	    />
 	<Button
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
 	    android:id="@+id/btn_advanced"
 	    android:text="@string/btn_advanced" 
 	    />

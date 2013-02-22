@@ -1,0 +1,74 @@
+package com.example.listacompleja;
+
+import android.R.integer;
+import android.R.string;
+import android.app.ListActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+public class Main extends ListActivity {
+
+	
+	public class Nodo
+	{
+		public string titulo;
+		public string descripcion;
+		public integer imagen;
+	}
+	
+	
+	// Método onCreate necesario en todas las actividades de Android
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		
+		setDatos();
+		
+		
+		mAdaptador=new MiAdaptador(this);
+		setListAdapter(mAdaptador);
+		
+		
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	public static class MiAdaptador extends BaseAdapter
+	{
+
+		@Override
+		public int getCount() {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public Object getItem(int position) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		@Override
+		public long getItemId(int position) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+	}
+	
+	
+}
