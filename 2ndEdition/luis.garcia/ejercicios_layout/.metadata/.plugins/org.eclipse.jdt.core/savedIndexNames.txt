@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+/home/luis/Proyectos/workspace/github/cursoAndroidURJC/2ndEdition/luis.garcia/ejercicios_layout/.metadata/.plugins/org.eclipse.jdt.core
+239685723.index
+3727989675.index

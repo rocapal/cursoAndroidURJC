@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayoutView"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+   
+    <Button
+       android:id="@+id/btnBig"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:text="@string/frame_layout_btn_big" />
+  
+   	<Button
+       android:id="@+id/btnLittle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/frame_layout_btn_little" />
+
+</FrameLayout>
