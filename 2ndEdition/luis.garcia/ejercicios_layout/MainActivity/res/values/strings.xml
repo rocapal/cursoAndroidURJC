@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejercicio_layouts</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+	<string name="main_btn_frame_layout">Frame layout</string>
+    <string name="main_btn_linear_layout">Linear layout</string>
+    <string name="main_btn_relative_layout">Relative layout</string>
+    <string name="main_btn_table_layout">Table layout</string>
+    <string name="main_btn_ejercicio">Exercise</string>
+    <string name="frame_layout_btn_big">BIG BUTTON</string>
+    <string name="frame_layout_btn_little">LITTLE BUTTON</string>
+    <string name="linear_layout_btn_orientation">Change orientation</string>
+    <string name="linear_layout_btn_gravity">Change gravity</string>
+    
+    
+    
+</resources>
