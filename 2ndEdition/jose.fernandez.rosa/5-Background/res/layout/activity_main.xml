@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main" 
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btn_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_timer" />
+
+    <Button 
+        android:id="@+id/btn_thread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_thread"
+        />
+    
+     <Button 
+        android:id="@+id/btn_thread_handled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_thread_handled"
+        />
+     
+     <Button 
+        android:id="@+id/btn_asynctask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_thread_handled"
+        />
+</LinearLayout>
