@@ -4,5 +4,7 @@
     <string name="app_name">4-Mapas</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-
+    <string name="map_key">0aogr3VNvR8WHMY5ttft1Qk3V_HcYfnBuxOIJHA</string>
+	<string name="mPdText">Esperando coordenadas GPS</string>
+	<string name="mPdTitle">GPS...</string>
 </resources>
