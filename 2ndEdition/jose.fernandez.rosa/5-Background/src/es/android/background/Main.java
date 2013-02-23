@@ -3,6 +3,7 @@ package es.android.background;
 import java.util.Timer;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Handler.Callback;
@@ -14,6 +15,8 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class Main extends Activity {
+	private final String TAG = getClass().getSimpleName();
+	public static Context context;
 	private Timer mTimer;
 	private MyTimerTask mTimerTask;
 	private MyThreadHandler mThHandler;
@@ -23,6 +26,7 @@ public class Main extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		context=this;
 		Button btnTimer = (Button) findViewById(R.id.btn_timer);
 		btnTimer.setOnClickListener(new OnClickListener() {
 
@@ -70,6 +74,17 @@ public class Main extends Activity {
 				
 				mThHandler= new MyThreadHandler(myHandler);
 				mThHandler.start();
+				
+			}
+		});
+		
+		Button btnAsyncTask =(Button) findViewById(R.id.btn_asynctask);
+		btnAsyncTask.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				MyAsyncTask at = new MyAsyncTask();
+				at.execute(10);
 				
 			}
 		});
