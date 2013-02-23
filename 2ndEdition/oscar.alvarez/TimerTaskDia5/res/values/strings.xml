@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TimerTaskDia5</string>
+    <string name="mensaje">Se ejecuta el timerTask</string>
+    <string name="mensajeThread">Se ejecuta el thread y con un Handler mandamos este mensaje al UI cada 3 segundos durante %s segundos</string>
+    <string name="mensajeService">El service se lleva ejecutando %s segundos</string>
+
+</resources>
