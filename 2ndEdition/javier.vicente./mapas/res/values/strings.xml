@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mapas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="map_key">"0Wqars6RpY0bg9GHba7qE558yowGW_HgEhFuPfA"
+        
+    </string>
+<string name="titulo_progress_dialog">GPS</string>
+<string name="mensaje_progress_dialog">esperando señal</string>
+    
+
+</resources>

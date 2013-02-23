@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Maps</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="map_key">0Y84euHagSpqqG8NTQbI4LETgO6P0pR5nklyW1w</string>
+    <string name="title_progress_dialog">wait for a moment please</string>
+    <string name="text_progress_dialog">moment = always</string>
+    
+
+</resources>

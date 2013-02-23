@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">5-background</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="btn_timer">Timer</string>
+	<string name="btn_thread">Thread</string>
+	<string name="btn_thread_handled">Thread Handled</string>
+	<string name="btn_asynctask">AsyncTask download file</string>
+	<string name="toast_msg">Mostrando el mensaje cada %1$d segundo/s</string>
+	<string name="toast_msg_th_handler">Thread ejecutando %1$d segundos</string>
+	
+</resources>

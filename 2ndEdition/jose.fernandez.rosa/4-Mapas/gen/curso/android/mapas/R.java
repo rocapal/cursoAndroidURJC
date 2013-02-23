@@ -26,9 +26,17 @@ public final class R {
     public static final class string {
         public static final int app_name=0x7f040000;
         public static final int hello_world=0x7f040001;
+<<<<<<< HEAD
         public static final int mPdText=0x7f040004;
         public static final int mPdTitle=0x7f040005;
         public static final int map_key=0x7f040003;
+=======
+        public static final int mPdText=0x7f040006;
+        public static final int mPdTitle=0x7f040007;
+        public static final int map_key=0x7f040003;
+        public static final int map_key_casa_PC=0x7f040005;
+        public static final int map_key_uni_PC=0x7f040004;
+>>>>>>> 27b8c97891eb5c1e49c62a10256ab7c29988b876
         public static final int menu_settings=0x7f040002;
     }
     public static final class style {

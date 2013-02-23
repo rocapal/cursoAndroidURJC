@@ -4,9 +4,10 @@
     <string name="app_name">4-Mapas</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="map_key_uni_PC">0aogr3VNvR8WHMY5ttft1Qk3V_HcYfnBuxOIJHA</string>
+    <string name="map_key">0aogr3VNvR8WHMY5ttft1Qk3V_HcYfnBuxOIJHA</string>
+	<string name="map_key_uni_PC">0aogr3VNvR8WHMY5ttft1Qk3V_HcYfnBuxOIJHA</string>
     <string name="map_key_casa_PC">0aogr3VNvR8WvtWEvc91eCAirSS6Or5le6voN-A</string>
 	<string name="mPdText">Esperando coordenadas GPS</string>
 	<string name="mPdTitle">GPS&#8230;</string>
-	
+
 </resources>

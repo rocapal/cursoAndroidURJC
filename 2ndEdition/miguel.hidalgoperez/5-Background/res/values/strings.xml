@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Background</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="msg">Showing msg each %1$d seconds</string>
+    <string name="msgthread">Show msg since %1$d seconds</string>
+
+</resources>

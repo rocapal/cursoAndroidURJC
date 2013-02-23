@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mapasEjemploDiaCuatro</string>
+    <string name="map_key">
+        0T9RMrOcUn1y6QDsl2LWv6Hn1ASyaynFSliN2fA
+    </string>
+    <string name="localizacion">
+        Esta es mi localizacion!!!
+    </string>
+    <string name="titleProgressDialog">
+        Buscando...
+    </string>
+    <string name="detailsProgressDialog">
+        Esperando por lector de localización
+    </string>
+
+</resources>
