@@ -3,8 +3,6 @@ package bartbender.homeunix.pac_man;
 import java.util.ArrayList;
 import java.util.List;
 
-import bartbender.homeunix.pac_man.Phantom.PhantomStyle;
-
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -21,7 +19,7 @@ public class GameView extends SurfaceView {
 
      private long lastClick;
      private List<Sprite> sprites = new ArrayList<Sprite>();
-     
+     private Pacman pacman;
      
      public GameView(Context context) {
            super(context);
@@ -61,11 +59,9 @@ public class GameView extends SurfaceView {
 
      private void InitializeGameItems() {
     	 //bufferedCanvas = new Canvas();
-    	 
-    	 sprites.add(new Phantom(this, PhantomStyle.BLUE,1,1));
-    	 sprites.add(new Phantom(this, PhantomStyle.RED,33,1));
-    	 sprites.add(new Phantom(this, PhantomStyle.YELLOW,66,1));
-    	 sprites.add(new Phantom(this, PhantomStyle.GREEN,94,1));
+    	 for (int i=0;i<4;i++)    	 sprites.add(new Phantom(this, i,100+i*32,100+i*64));
+    	 pacman = new Pacman(this,100,100);
+    	 sprites.add(pacman);
     	 
      }
      
@@ -95,7 +91,7 @@ public class GameView extends SurfaceView {
     	 if (System.currentTimeMillis() - lastClick > 300) {
              lastClick = System.currentTimeMillis();
              synchronized (getHolder()) {
-                
+            	 return pacman.onTouchEvent(event);
              }
       }
       return true;

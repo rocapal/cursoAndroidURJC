@@ -22,7 +22,15 @@ public class Sprite {
 	private Rect rSrc;
 	private Rect rDst;
 	
-	
+	public enum eDirection {
+		RIGHT,LEFT,DOWN,UP;
+		
+		public int toInt(){
+			return this.ordinal();
+		}
+		
+		
+	}
 	
 	public Sprite(GameView gameView, int drawableResource,int rows,int columns) {
 		this.view = gameView;
@@ -53,7 +61,7 @@ public class Sprite {
 		int srcY = getCurrentModel() * height;
 		
 		rSrc.set(srcX, srcY, srcX + width, srcY + height);
-		rDst.set(x, y,x + width, y + height);
+		rDst.set(x-width/2, y-height/2,x + width/2, y + height/2);
 	}
 	
 	public void onDraw(Canvas canvas) {
