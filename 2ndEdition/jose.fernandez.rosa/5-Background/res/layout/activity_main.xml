@@ -30,6 +30,6 @@
         android:id="@+id/btn_asynctask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_thread_handled"
+        android:text="@string/btn_asynctask"
         />
 </LinearLayout>
