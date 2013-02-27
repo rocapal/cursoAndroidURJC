@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Listas</string>
+    <string name="banner">Lista simple</string>
+    <string name="texto1a">Este es el texto uno A</string>
+    <string name="texto2a">Este es el texto dos A</string>
+    <string name="texto3a">Este es el texto tres A</string>
+    <string name="texto1b">Este es el texto uno B</string>
+    <string name="texto2b">Este es el texto dos B</string>
+    <string name="texto3b">Este es el texto tres B</string>
+    <string name="texto1c">Este es el texto uno C</string>
+    <string name="texto2c">Este es el texto dos C</string>
+    <string name="texto3c">Este es el texto tres C</string>
+</resources>
