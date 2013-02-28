@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">6_AsyncTask</string>
+    <string name="main_text">Probando AsyncTask y ProgressDialog</string>
+    <string name="menu_settings">Settings</string>
+    <string name="progress_text_title">AsyncTask</string>
+    <string name="progress_text_desc">Tardo 10 segundos</string>
+
+</resources>

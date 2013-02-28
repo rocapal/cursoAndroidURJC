@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">5_Hilos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="txBtTimerTask">TimerTask</string>
+	<string name="txTimerTask">Enviando Toast cada %1$d segundos</string>
+	<string name="txBtThread">Thread</string>
+	<string name="txThread">Thread lanzado hace %1$d segundos</string>
+	<string name="txBtStartService">Inicia Service</string>
+	<string name="txBtStopService">Para Service</string>
+	<string name="txServiceInit">--</string>
+</resources>
