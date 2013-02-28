@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyMaps</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="map_key">0YJ7RMxvssq_fFV0GpzVjjnn-empnTCfBVFdbsA</string>
+	<string name="title_progress">GPS</string>
+	<string name="title_message">Esperando localización GPS</string>
+</resources>

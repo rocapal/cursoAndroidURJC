@@ -1,0 +1,30 @@
+<?html version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/LinearLayout01" >
+
+    <TextView
+        android:id="@+id/tvTexto1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tvTexto2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvTexto3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:textColor="#000000" />
+    
+</LinearLayout>
