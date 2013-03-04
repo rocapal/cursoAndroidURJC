@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragments" 
+    android:orientation="vertical">
+
+	<Button
+	    android:id="@+id/btn_showFrag"
+	    android:text="@string/btn_showFrag"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    />
+
+	<LinearLayout
+	    android:id="@+id/container"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/btn_showFrag"   
+	    android:orientation="vertical" >
+	</LinearLayout>
+	
+	<fragment 
+	    class="es.practicas.fragments.ControlFragment"
+	    android:id="@+id/editor2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"	    
+	    />
+</LinearLayout>
