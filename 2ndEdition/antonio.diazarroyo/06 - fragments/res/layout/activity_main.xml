@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:text="@string/title"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_fragment_simple" />
+
+            <Button
+                android:id="@+id/button_fragment_simple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view"
+                android:textSize="14sp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/img_list_without_fragments" />
+
+            <Button
+                android:id="@+id/button_no_fragments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view"
+                android:textSize="14sp" />
+        </TableRow>  
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_fragment_mobile" />
+
+            <Button
+                android:id="@+id/button_fragment_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view"
+                android:textSize="14sp" />
+        </TableRow>         
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_fragment_tablet" />
+
+            
+            <Button
+                android:id="@+id/button_fragment_tablet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view"
+                android:textSize="14sp" />
+        </TableRow>              
+    </TableLayout>
+
+</LinearLayout>

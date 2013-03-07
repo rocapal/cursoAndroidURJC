@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">fragments</string>
+    <string name="hello_fragments">Hello fragments!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="fragments">fragments</string>
+    <string name="title">Fragments examples</string>
+    <string name="show">show</string>
+    <string name="hide">hide</string>
+    <string name="test">Test</string>
+    <string name="view">view</string>
+    <string name="title_fragment_simple">Fragment simple</string>
+    <string name="title_fragment_mobile">Fragment list for mobile</string>
+    <string name="title_fragment_tablet">Fragment list for tablet</string>
+    <string name="no_fragments_list_activity">no fragments list activity</string>
+    <string name="img_list_without_fragments">Images list without fragments</string>
+    <string name="list_images_mobile">Images list for mobile</string>
+    
+</resources>
