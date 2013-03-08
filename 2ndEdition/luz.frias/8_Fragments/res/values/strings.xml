@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">8_Fragments</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btMain">Fragment Activity</string>
+    <string name="btFragmentOK">OK</string>
+    <string name="btFragmentCancel">Cancel</string>
+    <string name="btFragmentTest">Test</string>
+    <string name="btShowFragment">Show Fragment</string>
+    <string name="btHideFragment">Hide Fragment</string>
+    <string name="btList">List Fragment</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>
