@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ConectividadDia7</string>
+    <string name="urlConnection">http://rest.libregeosocial.org/social/layer/560/search/?search=&amp;latitude=40.2855&amp;longitude=-3.8222&amp;radius=1.0&amp;category=0&amp;elems=20&amp;page=1&amp;format=JSON</string>
+</resources>
