@@ -3,13 +3,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_height="fill_parent"
               android:layout_width="fill_parent"
-              android:orientation="vertical"
-        >
+              android:orientation="vertical" >
     <TextView
         android:gravity="center"
         android:id="@+id/title"
         android:layout_height="wrap_content"
-        android:layout_margin="5dip"
+        android:layout_margin="2dip"
         android:layout_width="fill_parent"
         android:text="Test with asynchronous tasks"
     />
@@ -19,7 +18,7 @@
         android:layout_below="@id/title"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_margin="5dip"
+        android:layout_margin="2dip"
         android:layout_width="wrap_content"
         android:text="Timer task"
     />
@@ -28,27 +27,46 @@
         android:layout_below="@id/timer_button"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_margin="5dip"
+        android:layout_margin="2dip"
         android:layout_width="wrap_content"
         android:text="Threads and Handlers"
     />
     <Button
-        android:id="@+id/start_service_button"
+        android:id="@+id/service_button"
         android:layout_below="@id/thread_button"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_margin="5dip"
+        android:layout_margin="2dip"
         android:layout_width="wrap_content"
-        android:text="Start service"
+        android:text="@string/start_service"
     />
     <Button
-        android:id="@+id/stop_service_button"
-        android:layout_below="@id/start_service_button"
+        android:id="@+id/async_task_button"
+        android:layout_below="@id/service_button"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:layout_margin="5dip"
+        android:layout_margin="2dip"
         android:layout_width="wrap_content"
-        android:text="Stop service"
+        android:text="Fill progress bar"
+    />
+    <Button
+        android:id="@+id/location_service_button"
+        android:layout_below="@id/async_task_button"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_width="wrap_content"
+        android:text="@string/start_location_service"
+    />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dip"
+        android:layout_width="fill_parent"
+        android:visibility="invisible"
+        style="@android:style/Widget.ProgressBar.Horizontal"
     />
 </RelativeLayout>
 

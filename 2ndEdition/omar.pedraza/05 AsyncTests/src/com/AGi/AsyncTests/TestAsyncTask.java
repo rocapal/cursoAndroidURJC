@@ -8,11 +8,17 @@
 
 package com.AGi.AsyncTests;
 
+import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.view.View;
+import android.widget.ProgressBar;
 
 public class TestAsyncTask extends AsyncTask {
-    public static Context mContext = null;
+    private static Context mContext = null;
+    public static Integer mProgress = 0;
+    private static ProgressBar mProgressBar = null;
 
     public TestAsyncTask(Context context) {
         super();
@@ -22,21 +28,46 @@ public class TestAsyncTask extends AsyncTask {
 
     @Override
     protected Object doInBackground(Object... objects) {
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+        try {
+            while (mProgress < 100) {
+                mProgress++;
+                publishProgress(mProgress);
+                Thread.currentThread().sleep(100);
+            }
+        }
+        catch (InterruptedException e) {
+            e.printStackTrace();
+        };
+
+        return null;
     }
 
     @Override
     protected void onPostExecute(Object o) {
-        super.onPostExecute(o);    //To change body of overridden methods use File | Settings | File Templates.
+        super.onPostExecute(o);
+
+        if (mProgressBar.getVisibility() != View.INVISIBLE) {
+            mProgressBar.setVisibility(View.INVISIBLE);
+        }
+
+        mProgress = 0;
+        publishProgress(mProgress);
     }
 
     @Override
     protected void onPreExecute() {
-        super.onPreExecute();    //To change body of overridden methods use File | Settings | File Templates.
+        super.onPreExecute();
+
+        mProgressBar = (ProgressBar) ((Activity) mContext).findViewById(R.id.progress_bar);
+        if (mProgressBar.getVisibility() != View.VISIBLE) {
+            mProgressBar.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override
     protected void onProgressUpdate(Object... values) {
-        super.onProgressUpdate(values);    //To change body of overridden methods use File | Settings | File Templates.
+        super.onProgressUpdate(values);
+
+        mProgressBar.setProgress((Integer) values[0]);
     }
 }

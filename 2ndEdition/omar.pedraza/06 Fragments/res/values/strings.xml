@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fragments</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="dialog_title">Write something</string>
+    <string name="fragments_activity">Fragments activity</string>
+    <string name="hide_fragment">Hide fragment</string>
+    <string name="list_activity">List activity</string>
+    <string name="ok">OK</string>
+    <string name="show_dialog">Show dialog</string>
+    <string name="show_fragment">Show fragment</string>
+    <string name="test">Test</string>
+    <string name="title">Fragments test</string>
+</resources>

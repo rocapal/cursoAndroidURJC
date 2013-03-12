@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="@string/app_title"
+    />
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:drawSelectorOnTop="false"
+              android:id="@+id/places_list"
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent" />
+</LinearLayout>
+

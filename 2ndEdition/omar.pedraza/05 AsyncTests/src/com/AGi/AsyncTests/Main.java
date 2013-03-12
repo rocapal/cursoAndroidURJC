@@ -3,6 +3,7 @@ package com.AGi.AsyncTests;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -17,6 +18,7 @@ public class Main extends Activity {
     private static Boolean mThreadActivated = false;
     private static Boolean mTimerActivated = false;
     private static Context mContext = null;
+    private static TestAsyncTask mAsyncTask = null;
     private static TestTimerTask mTimerTask = null;
     private static TestThreadHandler mThread = null;
     private static Timer mTimer = null;
@@ -55,21 +57,67 @@ public class Main extends Activity {
             }
         });
 
-        Button startService = (Button) this.findViewById(R.id.start_service_button);
-        startService.setOnClickListener(new View.OnClickListener() {
+        Button serviceButton = (Button) this.findViewById(R.id.service_button);
+        serviceButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TestService.setContext(mContext);
-                startService(new Intent(getApplicationContext(), TestService.class));
+                if (!TestService.isRunning()) {
+                    TestService.setContext(mContext);
+                    TestService.registerListener(new iListener() {
+                        @Override
+                        public void setText(String text) {
+                            TextView textView = (TextView) ((Activity) mContext).findViewById(R.id.title);
+                            textView.setText(text);
+                        }
+                    });
+
+                    startService(new Intent(mContext, TestService.class));
+
+                    ((Button) view).setText(R.string.stop_service);
+                }
+                else {
+                    TestService.stopHandler();
+                    stopService(new Intent(mContext, TestService.class));
+
+                    ((Button) view).setText(R.string.start_service);
+                }
             }
         });
 
-        Button stopService = (Button) this.findViewById(R.id.stop_service_button);
-        stopService.setOnClickListener(new View.OnClickListener() {
+        Button asyncTaskButton = (Button) this.findViewById(R.id.async_task_button);
+        asyncTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TestService.setContext(mContext);
-                stopService(new Intent(getApplicationContext(), TestService.class));
+                if (mAsyncTask == null || mAsyncTask.mProgress == 0) {
+                    mAsyncTask = new TestAsyncTask(mContext);
+                    mAsyncTask.execute(null, null, null);
+                }
+            }
+        });
+
+        Button locationServiceButton = (Button) this.findViewById(R.id.location_service_button);
+        locationServiceButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!TestLocationService.isRunning()) {
+                    TestLocationService.setContext(mContext);
+                    TestLocationService.registerListener(new iListener() {
+                        @Override
+                        public void setText(String text) {
+                            TextView textView = (TextView) ((Activity) mContext).findViewById(R.id.title);
+                            textView.setText(text);
+                        }
+                    });
+
+                    startService(new Intent(mContext, TestLocationService.class));
+
+                    ((Button) view).setText(R.string.stop_location_service);
+                }
+                else {
+                    stopService(new Intent(mContext, TestLocationService.class));
+
+                    ((Button) view).setText(R.string.start_location_service);
+                }
             }
         });
     }
@@ -133,10 +181,5 @@ public class Main extends Activity {
             mThread.mShouldContinue = true;
             mThread.run();
         }
-    }
-
-    public void changeText(Integer counter) {
-        TextView textView = (TextView) this.findViewById(R.id.title);
-        textView.setText(this.getString(R.string.service_text, counter));
     }
 }
