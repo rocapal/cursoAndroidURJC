@@ -31,12 +31,25 @@
     <file path="/AndroidManifest.xml" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1360947322086" ignored="false" />
     <file path="/MyLocationListener.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1360947913233" ignored="false" />
     <file path="$PROJECT_DIR$/../../Ejemplos GIT curso/android-examples/5-HelloMap/src/es/curso/android/HelloMap/Main.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1360950206702" ignored="false" />
-    <file path="/fragment.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1360953528829" ignored="false" />
+    <file path="/fragment.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363021813917" ignored="false" />
     <file path="$PROJECT_DIR$/../../Ejemplos GIT curso/android-examples/5-HelloMap/src/es/curso/android/HelloMap/MapOverlay.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1360953531621" ignored="false" />
     <file path="/MapOverlay.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1360954630376" ignored="false" />
     <file path="/strings.xml" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1360956267148" ignored="false" />
     <file path="/Dummy.txt" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1361458663122" ignored="false" />
     <file path="$PROJECT_DIR$/../../Ejemplos GIT curso/android-examples/7-AsyncTask-ProgressDialog/src/es/curso/android/asyncTask/Main.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1361458854925" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/AndroidManifest.xml" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363018795666" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/res/values/strings.xml" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363017715028" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/src/com/example/BeThere/MainActivity.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363021903732" ignored="false" />
+    <file path="/MainActivity.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363021902724" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/res/layout/main.xml" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363021811693" ignored="false" />
+    <file path="/main.xml" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363021782681" ignored="false" />
+    <file path="$USER_HOME$/AGIProjects/PushNotificationExample/src/com/example/PushNotificationExample/MainActivity.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363021833668" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/src/com/example/BeThere/VisitedCitiesActivity.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363078521568" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/src/com/example/BeThere/VisitedCountriesActivity.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363078637127" ignored="false" />
+    <file path="/VisitedCountriesActivity.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363078585637" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/src/com/example/BeThere/CountriesActivity.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363079026838" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/src/com/example/BeThere/Country.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363079831618" ignored="false" />
+    <file path="$USER_HOME$/Desktop/Proyecto final Curso/BeThere/src/com/example/BeThere/City.java" changelist="4cfbbff7-d616-4bf4-bc22-471157580c18" time="1363079860161" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +64,8 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -85,8 +100,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -96,10 +109,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="44" selection-start="612" selection-end="630" vertical-scroll-proportion="0.0">
+            <state line="10" column="8" selection-start="480" selection-end="535" vertical-scroll-proportion="0.3856041">
               <folding />
             </state>
           </provider>
@@ -107,31 +120,43 @@
       </file>
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="4" selection-start="267" selection-end="465" vertical-scroll-proportion="-3.8888888">
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="android-designer">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/mapasEjemploDiaCuatro/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="32" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+            <state line="162" column="12" selection-start="5573" selection-end="5577" vertical-scroll-proportion="-17.076923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/mapasEjemploDiaCuatro/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="83" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.48994976">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="thump.jpeg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/thump.jpeg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chincheta.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/drawable/chincheta.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="MapOverlay.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/mapasEjemploDiaCuatro/MapOverlay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="21" selection-start="2662" selection-end="2662" vertical-scroll-proportion="0.0">
+            <state line="65" column="40" selection-start="1983" selection-end="1986" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,7 +165,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+            <state line="9" column="4" selection-start="286" selection-end="456" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,7 +191,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="82" />
+    <option name="x" value="1240" />
     <option name="y" value="22" />
     <option name="width" value="1156" />
     <option name="height" value="774" />
@@ -197,7 +222,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -213,7 +237,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapasEjemploDiaCuatro" />
+              <option name="myItemId" value="mapasEjemploDia4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,7 +247,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapasEjemploDiaCuatro" />
+              <option name="myItemId" value="mapasEjemploDia4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -241,7 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapasEjemploDiaCuatro" />
+              <option name="myItemId" value="mapasEjemploDia4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -259,7 +283,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapasEjemploDiaCuatro" />
+              <option name="myItemId" value="mapasEjemploDia4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -277,7 +301,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mapasEjemploDiaCuatro" />
+              <option name="myItemId" value="mapasEjemploDia4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -287,6 +311,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,16 +322,17 @@
     <property name="options.lastSelected" value="Errors" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="HT01TP800543" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="android2.3.3googleAPI" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Android4.1" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -348,19 +374,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -386,6 +399,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -472,11 +498,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="82" y="22" width="1156" height="774" extended-state="0" />
+    <frame x="1240" y="22" width="1156" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32942238" sideWeight="0.6712538" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -489,12 +516,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27747747" sideWeight="0.6712538" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.9981982" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27747747" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32721713" sideWeight="0.9981982" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.6712538" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -561,9 +587,35 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../../Android/android-sdk-macosx/add-ons/addon-google_apis-google-10/libs/maps.jar!/com/google/android/maps/MapActivity.class">
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="346" selection-end="346" vertical-scroll-proportion="0.3625304" />
+        <state line="4" column="32" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/mapasEjemploDiaCuatro/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="25" selection-start="2410" selection-end="2414" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/mapasEjemploDiaCuatro/MapOverlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="40" selection-start="1983" selection-end="1986" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -574,11 +626,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="32" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/mapasEjemploDiaCuatro/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="32" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0">
+        <state line="50" column="83" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -597,12 +656,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/thump.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/chincheta.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="267" selection-end="465" vertical-scroll-proportion="-3.8888888">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="4" selection-start="286" selection-end="456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/example/mapasEjemploDiaCuatro/MapOverlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="40" selection-start="1983" selection-end="1986" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/mapasEjemploDiaCuatro/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="83" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.48994976">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="162" column="12" selection-start="5573" selection-end="5577" vertical-scroll-proportion="-17.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="8" selection-start="480" selection-end="535" vertical-scroll-proportion="0.3856041">
+          <folding />
         </state>
       </provider>
     </entry>
