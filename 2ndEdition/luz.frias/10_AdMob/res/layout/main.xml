@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >    
+    <LinearLayout
+        android:id="@+id/llheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btRefresh"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/btRefresh" />
+        <Button
+            android:id="@+id/btHide"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/btHide" />
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/llBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llheader" >        
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        ads:adUnitId="a14cf3d5929b5c6"
+	        ads:adSize="BANNER" />            
+    </LinearLayout>
+</RelativeLayout>
