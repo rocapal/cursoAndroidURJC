@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityMain" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text="@string/hello_world"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/show" />
+
+        <Button
+            android:id="@+id/hide"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/hide" />
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/refresh" />        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+    </LinearLayout>
+
+</LinearLayout>

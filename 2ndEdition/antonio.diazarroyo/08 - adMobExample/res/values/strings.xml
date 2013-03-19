@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestAdMob</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Testing adMob</string>
+    <string name="show">show</string>
+    <string name="hide">hide</string>
+    <string name="refresh">refresh</string>
+
+</resources>
