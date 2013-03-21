@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AdMob</string>
+    <string name="app_title">AdMob test app</string>
+    <string name="hide_button">Hide banner</string>
+    <string name="show_button">Show banner</string>
+</resources>
