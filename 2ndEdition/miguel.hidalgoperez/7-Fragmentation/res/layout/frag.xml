@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/edit"
+    />
+   
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+   <Button 
+        android:id="@+id/buttonok"
+   	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+   />
+   <Button 
+        android:id="@+id/buttoncancel"
+   	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+   />
+   <Button 
+        android:id="@+id/buttontest"
+   	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+   />
+   </LinearLayout> 
+
+</LinearLayout>
