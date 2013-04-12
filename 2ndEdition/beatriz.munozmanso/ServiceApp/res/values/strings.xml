@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ServiceApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="TimerTask">TimerTask</string>
+	<string name="msg_period">Show this toast each %1$d seconds</string>
+	<string name="toastHandler">Delay %1$d </string>
+	<string name="ThreadTask">ThreadTask</string>
+	
+</resources>

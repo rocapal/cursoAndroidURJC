@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id = "@+id/frag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Fragment" />
+    <Button
+        android:id = "@+id/frag2"
+        android:layout_toRightOf="@+id/frag1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Hide Fragment" />
+    <Button
+        android:id = "@+id/frag3"
+        android:layout_toRightOf="@+id/frag2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="mobile" />
+    <fragment 
+        class="es.curso.fragments.Fragment1"
+        android:layout_below="@+id/frag1"
+        android:id="@+id/formulario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_below="@+id/formulario"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+        
+    </LinearLayout>
+
+</RelativeLayout>
