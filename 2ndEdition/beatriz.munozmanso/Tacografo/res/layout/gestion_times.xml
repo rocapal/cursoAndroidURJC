@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#C0C0C0" >
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:orientation="vertical"
+		    android:gravity="center"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" 
+		    android:background="#C0C0C0">
+			    		 
+			    <TextView
+			        android:id="@+id/times"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:text="@string/times"
+			        android:textStyle="bold"
+			        android:textSize="30sp"
+			        android:layout_marginBottom="20dip"
+			        android:gravity="center"
+			        tools:context=".Main" />
+		
+				 <RelativeLayout
+				     android:layout_width="fill_parent"
+				     android:layout_height="wrap_content"
+				     android:layout_gravity="center" >
+		
+				     <ImageButton
+				         android:id="@+id/startstop"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_centerInParent="true"
+				         android:layout_marginBottom="20dip"
+				         android:layout_marginTop="20dip"
+				         android:background="#C0C0C0"
+				         android:contentDescription="@string/startstop"
+				         android:src="@drawable/inicio" />
+		
+				     <ImageButton
+				         android:id="@+id/driving"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_alignParentTop="true"
+				         android:layout_toLeftOf="@+id/startstop"
+				         android:background="#C0C0C0"
+				         android:contentDescription="@string/driving"
+				         android:src="@drawable/conduccion" />
+		
+				     <ImageButton
+				         android:id="@+id/dispose"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_alignBottom="@+id/startstop"
+				         android:layout_alignLeft="@+id/driving"
+				         android:background="#C0C0C0"
+				         android:contentDescription="@string/dispose"
+				         android:src="@drawable/disponibilidad" />
+		
+				     <ImageButton
+				         android:id="@+id/relax"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_alignParentTop="true"
+				         android:layout_toRightOf="@+id/startstop"
+				         android:background="#C0C0C0"
+				         android:contentDescription="@string/relax"
+				         android:src="@drawable/descanso" />
+				     <ImageButton
+				         android:id="@+id/work"
+				         android:layout_width="wrap_content"
+				         android:layout_height="wrap_content"
+				         android:layout_alignBottom="@+id/startstop"
+				         android:layout_alignRight="@+id/relax"
+				         android:background="#C0C0C0"
+				         android:contentDescription="@string/relax"
+				         android:src="@drawable/trabajo" />
+		
+				 </RelativeLayout>
+				
+			      <TextView
+			            android:id="@+id/rest"
+			            android:textStyle="italic"
+			       		android:textSize="20sp"
+			       		android:textColor="#ffffff"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center"		
+				        android:layout_marginTop="40dip"        
+				        android:layout_marginBottom="20dip"
+				        android:text="@string/restTime"
+				        />
+			       	    
+			      <TextView
+			            android:id="@+id/time"
+			            android:textStyle="bold"
+			            android:textColor="#FF0000"
+			            android:textSize="25sp"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center"		        
+				        android:layout_marginBottom="10dip"
+				        />
+			      
+			     	<TextView
+			            android:id="@+id/name"
+			       		android:textColor="#ffffff"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center"		        
+				   />
+			     	<TextView
+			            android:id="@+id/mostratMat"
+			       		android:textColor="#ffffff"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center"		
+				   />
+		</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#C0C0C0" >
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    xmlns:tools="http://schemas.android.com/tools"
+		    android:orientation="vertical"
+		    android:background="#C0C0C0"
+		    android:layout_gravity="center"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"  >
+		    
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"	
+				android:layout_gravity="center"
+				android:text="@string/title_preferences"
+				android:textStyle="bold"
+		       	android:textColor="#ffffff"
+				android:layout_marginBottom="15dip"
+				android:textSize="22sp" />
+		
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:textStyle="bold"
+					android:text="@string/name_person"	
+				/>
+			
+				<EditText
+					android:id="@+id/etName"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:inputType="text"
+					android:layout_marginTop="10dip"
+					android:layout_marginBottom="20dip"
+					android:layout_marginRight="20dip"
+					android:layout_marginLeft="20dip"
+				/>
+		
+				
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"	
+					android:layout_gravity="center"	
+					android:textStyle="bold"
+					android:text="@string/matricula"	
+				/>
+			
+				<EditText
+					android:id="@+id/etMat"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:inputType="text"
+					android:layout_marginTop="10dip"
+					android:layout_marginBottom="20dip"
+					android:layout_marginRight="20dip"
+					android:layout_marginLeft="20dip"
+				/>
+				
+			<Button
+				android:id="@+id/btSave"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/save_preferences"
+				android:layout_gravity="center"
+				android:layout_marginTop="10dip"
+			></Button>
+			
+			<Button
+				android:id="@+id/dgt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/dgt"
+				android:layout_gravity="center"
+				android:layout_marginTop="70dip"
+			></Button>
+		
+		</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

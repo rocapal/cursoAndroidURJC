@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#C0C0C0"
+    android:paddingTop="3dip"
+    android:paddingBottom="3dip"
+>
+
+	<ImageView
+	    android:id="@+id/listTimeType"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="5sp"
+	    android:layout_marginLeft="10sp"
+	    android:layout_marginTop="5sp"
+	    android:layout_weight="1"
+	    android:contentDescription="@string/total"
+	    android:paddingTop="10dip" />
+	  
+	<LinearLayout 
+		android:layout_width="wrap_content" 
+		android:layout_weight="3"
+		android:layout_marginLeft="6dip"
+		android:layout_marginRight="6dip"
+		android:layout_height="wrap_content" 
+		android:orientation="vertical"
+		
+		>
+		    
+		<TextView
+	    	android:id="@+id/listTimeStart"
+	 		android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="16sp"	    
+		    />
+		    
+		<TextView
+	    	android:id="@+id/listTimeDuration"
+	 		android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:textSize="12sp"    
+		    />
+	 </LinearLayout>
+	 
+
+</LinearLayout>
+
+
+
+
+

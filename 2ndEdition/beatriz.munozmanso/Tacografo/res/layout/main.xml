@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    tools:context=".Main">
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#C0C0C0" >
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dip"
+	        android:textSize="25sp"
+	        android:textStyle="bold"
+	        android:textColor="#ffffff"
+	        android:text="@string/app_name" />
+	    
+	
+		<LinearLayout 
+		    android:id="@+id/layOutTipos"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginTop="20dip"
+		    android:layout_below="@+id/textView1" >
+		
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		        android:layout_marginLeft="20dip"
+		        android:layout_marginRight="20dip"
+		        android:orientation="vertical" >
+		
+		        <ImageButton
+		            android:id="@+id/Button1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:contentDescription="@string/b_init1"
+		            android:src="@drawable/reloj" />
+	
+		        <TextView
+		            android:id="@+id/textButton1"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:contentDescription="@string/b_init1"
+		            android:gravity="center"
+		            android:text="@string/b_init1"
+		            android:textStyle="bold" />
+		
+		        <ImageButton
+		            android:id="@+id/Button2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="20dip"
+		            android:gravity="center"
+		            android:src="@drawable/lista"
+		            android:contentDescription="@string/b_init2"
+		            android:text="@string/b_init2" />
+		
+		        <TextView
+		            android:id="@+id/textButton2"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:textStyle="bold"
+		            android:text="@string/b_init2" />
+		    </LinearLayout>
+		
+		
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		        android:layout_marginLeft="20dip"
+		        android:layout_marginRight="20dip"
+		        android:orientation="vertical" >
+		
+		        <ImageButton
+		            android:id="@+id/Button3"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:src="@drawable/ubicacion"
+		            android:contentDescription="@string/b_init3"
+		            android:text="@string/b_init3" />
+		
+		        <TextView
+		            android:id="@+id/textButton3"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:gravity="center"
+		            android:textStyle="bold"
+		            android:text="@string/b_init3" />
+		
+		        <ImageButton
+		            android:id="@+id/Button4"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="20dip"
+		            android:gravity="center"
+		            android:src="@drawable/preferencias"
+		            android:contentDescription="@string/b_init4"
+		            android:text="@string/b_init4" />
+		
+		        <TextView
+		            android:id="@+id/textButton4"
+		            android:layout_width="fill_parent"
+		            android:gravity="center"
+		            android:layout_height="wrap_content"
+		            android:textStyle="bold"
+		            android:text="@string/b_init4" />
+		    </LinearLayout>
+		
+		</LinearLayout>
+		<ImageButton
+		    android:id="@+id/Button5"
+		    android:layout_below="@+id/layOutTipos"
+		    android:layout_marginTop="20dip"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:contentDescription="@string/b_init5"
+		    android:src="@drawable/urgencias" />
+	
+	</RelativeLayout>
+</ScrollView>
