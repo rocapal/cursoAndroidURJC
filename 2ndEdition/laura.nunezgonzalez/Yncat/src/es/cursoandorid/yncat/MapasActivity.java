@@ -1,15 +1,14 @@
 package es.cursoandorid.yncat;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
-import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Handler.Callback;
@@ -26,37 +25,35 @@ import com.google.android.maps.Projection;
 
 public class MapasActivity extends MapActivity{
 	
+
+	public static Bitmap mbitmap;
 	public MapView mapview = null;
 	public static Handler mHandler;	
 	public MapController mcontrol = null;
 	private Intent servicio = null;
 	private MyOverlay om;
-	private ArrayList<GeoPoint> points;
-	private Bundle save;
+
+	
 	@Override
 	protected void onCreate(Bundle icicle) {
 		// TODO Auto-generated method stub
 		super.onCreate(icicle);
-		points = new ArrayList<GeoPoint>();
-		save = new Bundle();
+		setContentView(R.layout.mapas);
+		mapview = (MapView) findViewById(R.id.myMapView);
+		om = new MyOverlay();	
 	}
 	
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();	
-		if(!(servicio ==null))
-			onRestoreInstanceState(save);
-		setContentView(R.layout.mapas);
-		mapview = (MapView) findViewById(R.id.myMapView);
 		mapview.setClickable(true);
 		mapview.setBuiltInZoomControls(true);
 		mcontrol = mapview.getController();
 		mcontrol.setZoom(9);
 		final List<Overlay> capas = mapview.getOverlays();
 		capas.clear();
-		om = new MyOverlay();
-		om.insertsPoints(points);	
+		mapview.postInvalidate();
 		mHandler = new Handler(new Callback(){
 			
 		public boolean handleMessage(Message msg) {
@@ -67,8 +64,8 @@ public class MapasActivity extends MapActivity{
 				capas.add(om);
 				mapview.postInvalidate();
 				Toast.makeText(MainActivity.mContexto, MainActivity.mContexto.getString(
-						R.string.toast_msg_location) + String.valueOf(msg.arg1),
-						Toast.LENGTH_SHORT).show();
+							R.string.toast_msg_location) + String.valueOf(msg.arg1),
+							Toast.LENGTH_SHORT).show();
 				return false;
 			}
 		});
@@ -81,24 +78,10 @@ public class MapasActivity extends MapActivity{
 
 	}
 	
-	private ArrayList<GeoPoint> obtainLocs(Bundle b){
-		ArrayList<GeoPoint> lista = new ArrayList<GeoPoint>();
-		if(b != null){
-			int[] lat = b.getIntArray("Latitudes");
-			int[] lon = b.getIntArray("Longitudes");
-			for(int i=0; i < lat.length; i++)
-			{
-				GeoPoint geo = new GeoPoint(lat[i],lon[i]);
-				lista.add(geo);
-			}
-		}
-		return lista;
-	}
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-		onSaveInstanceState(save);
 	}
 	
 	@Override
@@ -114,25 +97,6 @@ public class MapasActivity extends MapActivity{
 		Log.d("MAPAS", "Se han pausado los mapas");
 	}
 	
-	@Override
-	protected void onSaveInstanceState(Bundle outState) {
-		// TODO Auto-generated method stub
-		super.onSaveInstanceState(outState);
-		if(!(om == null))
-		{
-			outState.putIntArray("Latitudes", om.getPointsLats());
-			outState.putIntArray("Longitudes", om.getPointsLongs());
-			
-		}
-	}
-	
-	@Override
-	protected void onRestoreInstanceState(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
-		super.onRestoreInstanceState(savedInstanceState);
-		points.addAll(obtainLocs(savedInstanceState));
-		Log.d("Restore", String.valueOf(points.size()));
-	}
 	
 	@Override
 	protected void onStop() {
@@ -140,14 +104,43 @@ public class MapasActivity extends MapActivity{
 		super.onStop();
 		Log.d("MAPAS", "Se han parado los mapas");
 	}
+	@Override
+	protected void onSaveInstanceState(Bundle outState) {
+		// TODO Auto-generated method stub
+		outState.putIntArray("Latitudes", om.getPointsLats());
+		outState.putIntArray("Longitudes", om.getPointsLongs());
+		super.onSaveInstanceState(outState);
+		Log.d("SALVANDO", "Salvamos estos puntos: " + String.valueOf(
+				om.getPointsLats().length));
+	}
+	
+	@Override
+	protected void onRestoreInstanceState(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onRestoreInstanceState(savedInstanceState);
+		restorePoints(savedInstanceState.getIntArray("Latitudes"), savedInstanceState.getIntArray("Longitudes"));
+	}
+	
+	private void restorePoints(int[] lats, int[] longs)
+	{
+		Log.d("RESTORE", "Recuperamos " + String.valueOf(lats.length));
+		for(int i=0; i < lats.length; i++)
+		{
+			GeoPoint geo = new GeoPoint(lats[i], longs[i]);
+			om.insertarPunto(geo);
+		}
+	}
+	
+	
 	
 	public class MyOverlay extends Overlay{
 		
 		private ArrayList<GeoPoint> puntos = new ArrayList<GeoPoint>();
-		
-		public void insertarPunto(GeoPoint loc){
+	
+	    public void insertarPunto(GeoPoint loc){
 			puntos.add(loc);
 		}
+		
 		
 		public void insertsPoints(ArrayList<GeoPoint> lis)
 		{
@@ -171,6 +164,7 @@ public class MapasActivity extends MapActivity{
 			}
 			return lista;
 		}
+		
 		
 		@Override
 		public void draw(Canvas canvas, MapView mapView, boolean shadow) 
@@ -204,17 +198,5 @@ public class MapasActivity extends MapActivity{
 			can.drawCircle(centro.x,centro.y, 3, p);
 			
 		}
-	/*	@Override
-		public boolean onTap(GeoPoint point, MapView mapView) 
-		{
-			Context contexto = mapView.getContext();
-			String msg = "Lat: " + point.getLatitudeE6()/1E6 + " - " + 
-			             "Lon: " + point.getLongitudeE6()/1E6;
-			
-			Toast toast = Toast.makeText(contexto, msg, Toast.LENGTH_SHORT);
-			toast.show();
-			
-			return true;
-		}*/
 	}		
 }
