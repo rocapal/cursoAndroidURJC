@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JuegoIntents</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_world2">Hello world 2222222!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="boton1">Actividad 1</string>
+    <string name="boton2">Actividad 2</string>
+    <string name="boton3">Actividad 3</string>
+    <string name="boton4">Actividad 4</string>
+    <string name="boton5">Actividad 5</string>
+    <string name="layout_texto">Este es el layout de texto que mola</string>
+    <string name="retorno">Actividad que retorna</string>
+    <string name="menu1">Boton 3</string>
+    <string name="menu2">Boton 4</string>
+
+</resources>

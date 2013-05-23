@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000099"
+    >
+    
+    <TextView  
+        android:id="@+id/titulo"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+		android:textColor="#ffffff" 
+        android:text="@string/titulo"
+        android:gravity="center"
+    />
+        
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#33ff00"
+    android:id="@+id/lVerde"
+    android:layout_below="@id/titulo"
+    >
+
+    <ImageView android:id="@+id/imagenVerde"
+        android:src="@drawable/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/> 
+    
+    <TextView  
+        android:id="@+id/tituloV"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+		android:textColor="#000000" 
+        android:text="@string/tituloV"
+        android:layout_toRightOf="@id/imagenVerde"
+        android:gravity="center"
+    />
+
+    <TextView  
+        android:id="@+id/texto"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+		android:textColor="#000000" 
+        android:text="@string/textoVerde"
+        android:layout_toRightOf="@id/imagenVerde"
+        android:layout_below="@id/tituloV"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:maxLines="3"
+    />
+
+    </RelativeLayout>
+    
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#33ffcc"
+    android:id="@+id/lVerde2"
+    android:layout_below="@id/lVerde"
+    android:orientation="vertical">
+        
+        <Button android:padding="3dp"
+            android:text="@string/boton1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <Button android:padding="3dp"
+            android:text="@string/boton2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <Button android:padding="3dp"
+            android:text="@string/boton3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+ <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="wrap_content"
+  	  	android:layout_height="wrap_content"
+ 	   	android:background="#000000"
+    	android:orientation="vertical"
+        android:layout_toRightOf="@id/lVerde2"
+        android:layout_below="@id/lVerde" >
+ <ImageView 
+        android:src="@drawable/mapa"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:paddingTop="3dp"
+        android:background="#000000"
+        android:id="@+id/mapa"/>
+ 
+ <Button 
+     android:text="@string/localizame"
+     android:layout_width="wrap_content"		
+     android:layout_height="wrap_content"
+     android:gravity="center"
+     android:padding="3dp"
+     android:layout_gravity="center"
+     android:id="@+id/localizar">
+ </Button>
+ </LinearLayout>
+ <TextView android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:textColor="#ff0000"
+     android:background="#000000"
+     android:text="@string/url"
+     android:layout_alignParentBottom="true"/>
+</RelativeLayout>
+</ScrollView>

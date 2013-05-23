@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActividadUno"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+    
+        <Button
+            android:id="@+id/boton1"
+            android:padding="3dp"
+            android:text="@string/boton1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/boton2"
+            android:padding="3dp"
+            android:text="@string/boton2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/boton3"
+            android:padding="3dp"
+            android:text="@string/boton3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/boton4"
+            android:padding="3dp"
+            android:text="@string/boton4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/boton5"
+            android:padding="3dp"
+            android:text="@string/boton5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>          
+            
+</LinearLayout>
