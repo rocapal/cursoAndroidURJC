@@ -14,26 +14,31 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int btnIntend=0x7f070004;
-        public static final int btnIntendS=0x7f070005;
-        public static final int btnblack=0x7f070008;
-        public static final int btnblue=0x7f070007;
-        public static final int btnfoto=0x7f070001;
+        public static final int LinearLayout01=0x7f070004;
+        public static final int btnblack=0x7f07000b;
+        public static final int btnblue=0x7f07000a;
+        public static final int btnhashtag=0x7f070003;
         public static final int btnmapa=0x7f070000;
-        public static final int btnpreferences=0x7f070002;
-        public static final int btnred=0x7f07000a;
-        public static final int btnsavezoom=0x7f07000c;
-        public static final int btnyellow=0x7f070009;
-        public static final int edit_zoom=0x7f07000b;
-        public static final int imageView1=0x7f070003;
-        public static final int menu_settings=0x7f07000d;
+        public static final int btnpreferences=0x7f070001;
+        public static final int btnred=0x7f07000d;
+        public static final int btnsavezoom=0x7f07000f;
+        public static final int btnyellow=0x7f07000c;
+        public static final int edhashtag=0x7f070002;
+        public static final int edit_zoom=0x7f07000e;
+        public static final int imag1=0x7f070007;
+        public static final int menu_settings=0x7f070010;
         public static final int myMapView=0x7f070006;
+        public static final int tvTexto=0x7f070005;
+        public static final int tvTexto1=0x7f070008;
+        public static final int tvTexto2=0x7f070009;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int mapas=0x7f030002;
-        public static final int preferences=0x7f030003;
+        public static final int hashtag=0x7f030001;
+        public static final int lista=0x7f030002;
+        public static final int mapas=0x7f030003;
+        public static final int personal_layout=0x7f030004;
+        public static final int preferences=0x7f030005;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;
@@ -57,6 +62,7 @@ public final class R {
         public static final int hello_world=0x7f040001;
         public static final int map_key=0x7f040003;
         public static final int menu_settings=0x7f040002;
+        public static final int msg_error_busqueda=0x7f04001e;
         public static final int msg_zoom_invalid=0x7f04001a;
         public static final int msg_zoom_ok=0x7f04001b;
         public static final int pref_color=0x7f04000e;
@@ -65,6 +71,8 @@ public final class R {
         public static final int pref_tittle_color=0x7f040011;
         public static final int pref_tittle_zoom=0x7f040012;
         public static final int pref_zoom=0x7f04000f;
+        public static final int search=0x7f04001d;
+        public static final int tbhashtag=0x7f04001c;
         public static final int textbtnpref=0x7f04000d;
         public static final int toast_msg_location=0x7f040005;
     }

@@ -6,6 +6,7 @@ public class ItemJs {
 	private String fotoUrl;
 	private String date;
 	private String fotoThumb;
+	private String texto;
 	
 	public String getNombre() {
 		return nombre;
@@ -45,5 +46,13 @@ public class ItemJs {
 
 	public void setFotoThumb(String fotoThumb) {
 		this.fotoThumb = fotoThumb;
+	}
+
+	public String getTexto() {
+		return texto;
+	}
+
+	public void setTexto(String texto) {
+		this.texto = texto;
 	}	
 }

@@ -30,4 +30,7 @@
     <string name="color_change">El color se ha cambiado correctamente</string>
     <string name="msg_zoom_invalid">Valor de zoom invalido: numeros entre 1 y 21</string>
     <string name="msg_zoom_ok">Valor de zoom cambiado</string>
+    <string name="tbhashtag">Hashtag</string>
+   <string name="search">Cadena de busqueda</string>
+   <string name="msg_error_busqueda">Debe rellenar el campo  de cadena de busqueda</string>
 </resources>

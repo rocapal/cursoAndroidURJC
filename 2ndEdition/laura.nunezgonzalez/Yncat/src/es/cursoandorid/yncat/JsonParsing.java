@@ -52,20 +52,14 @@ public class JsonParsing {
 		ItemJs ijs = new ItemJs();
 
 		try{
-			if(nodo.has("since"))
-				ijs.setDate(nodo.getString("since"));
-			if (nodo.has("name"))
-				ijs.setNombre(nodo.getString("name"));
-			if(nodo.has("external_info"))
-			{
-				JSONObject info = nodo.getJSONObject("external_info");
-				if(info.has("photo_thumb"))
-					ijs.setFotoThumb(info.getString("photo_thumb"));
-				if(info.has("photo_url"))
-					ijs.setFotoUrl(info.getString("photo_url"));
-				if(info.has("info_url"))
-					ijs.setInfoUrl(info.getString("info_url"));
-			}
+			if(nodo.has("created_at"))
+				ijs.setDate(nodo.getString("created_at"));
+			if (nodo.has("from_user_name"))
+				ijs.setNombre(nodo.getString("from_user_name"));
+			if(nodo.has("profile_image_url"))
+				ijs.setFotoUrl(nodo.getString("profile_image_url"));
+			if(nodo.has("text"))
+				ijs.setTexto(nodo.getString("text"));
 			return ijs;
 		} catch (JSONException e) {
 		// TODO Auto-generated catch block

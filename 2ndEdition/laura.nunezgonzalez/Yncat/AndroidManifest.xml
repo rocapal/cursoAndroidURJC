@@ -33,6 +33,7 @@
         <service android:name="ServicioLocalizacion"></service>
         <activity android:name="PhotoIntentActivity"></activity>
         <activity android:name="Preferences"></activity>
+        <activity android:name="Hashtag"></activity>
     </application>
 
 </manifest>
