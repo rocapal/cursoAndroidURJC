@@ -2,11 +2,9 @@ package es.cursoandorid.yncat;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -24,8 +22,10 @@ public class Preferences extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.preferences);
 		this.mContext = MainActivity.mContexto;
-		savePreference(mContext.getResources().getString(R.string.pref_color), Color.BLUE);
-		savePreference(mContext.getResources().getString(R.string.pref_zoom), 15);
+		if(loadPreference(mContext.getResources().getString(R.string.pref_color),0)==0)
+			savePreference(mContext.getResources().getString(R.string.pref_color), Color.BLUE);
+		if(loadPreference(mContext.getResources().getString(R.string.pref_zoom),-1) < 1)
+			savePreference(mContext.getResources().getString(R.string.pref_zoom), 11);
 		Button btnbe = (Button) findViewById(R.id.btnblue);
 		Button btny = (Button) findViewById(R.id.btnyellow);
 		Button btnr = (Button) findViewById(R.id.btnred);
@@ -82,7 +82,7 @@ public class Preferences extends Activity {
 					int zoom = Integer.parseInt(edzoom.getText().toString());
 						if(zoom < 22 && zoom > 1)
 						{
-							savePreference(edzoom.getText().toString(), zoom);
+							savePreference(mContext.getResources().getString(R.string.pref_zoom), zoom);
 							Toast.makeText(mContext, getString(R.string.msg_zoom_ok), Toast.LENGTH_SHORT).show();
 						}else
 							Toast.makeText(mContext, getString(R.string.msg_zoom_invalid), Toast.LENGTH_SHORT).show();
@@ -106,7 +106,7 @@ public class Preferences extends Activity {
 		editor.commit();
 	}
 	
-	private String loadPreference(String key)
+	public static String loadPreference(String key)
 	{
 		return MainActivity.mSharedPreferences.getString(key, null);		
 	}
@@ -118,7 +118,7 @@ public class Preferences extends Activity {
 		editor.commit();
 	}
 	
-	private int loadPreference(String key, int def)
+	public static int loadPreference(String key, int def)
 	{
 		return MainActivity.mSharedPreferences.getInt(key,def);		
 	}

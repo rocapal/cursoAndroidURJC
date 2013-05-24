@@ -25,13 +25,18 @@ import com.google.android.maps.Projection;
 public class MapasActivity extends MapActivity{
 	
 
+	public class MyPoint {
+		public GeoPoint point;
+		public int color;
+	}
 	public MapView mapview = null;
 	public static Handler mHandler;	
 	public MapController mcontrol = null;
 	private Intent servicio = null;
 	private MyOverlay om;
-	private static ArrayList<GeoPoint> listPoints;
-	
+	private static ArrayList<MyPoint> listPoints;
+	private int mColor;
+	private int mZoom;
 	@Override
 	protected void onCreate(Bundle icicle) {
 		// TODO Auto-generated method stub
@@ -49,12 +54,15 @@ public class MapasActivity extends MapActivity{
 		mapview.setClickable(true);
 		mapview.setBuiltInZoomControls(true);
 		mcontrol = mapview.getController();
-		mcontrol.setZoom(MainActivity.mSharedPreferences.getInt(
-				MainActivity.mContexto.getResources().getString(R.string.pref_zoom), 12));
+		mColor = Preferences.loadPreference(
+				MainActivity.mContexto.getResources().getString(R.string.pref_color), Color.BLUE);
+		mZoom = Preferences.loadPreference(
+				MainActivity.mContexto.getResources().getString(R.string.pref_zoom), 12);
+		mcontrol.setZoom(mZoom);
 		final List<Overlay> capas = mapview.getOverlays();
 		capas.clear();
 		if(listPoints == null)
-			listPoints = new ArrayList<GeoPoint>();
+			listPoints = new ArrayList<MyPoint>();
 		else
 			om.insertsPoints(listPoints);
 		capas.add(om);
@@ -66,8 +74,11 @@ public class MapasActivity extends MapActivity{
 				Bundle data = msg.getData();
 				GeoPoint loc = new GeoPoint((int) (data.getDouble("Latitud")*1000000), (int) (data.getDouble("Longitud")*1000000));
 				mcontrol.animateTo(loc);
-				om.insertarPunto(loc);
-				listPoints.add(loc);
+				MyPoint mp = new MyPoint();
+				mp.point = loc;
+				mp.color = mColor;
+				listPoints.add(mp);
+				om.insertPoint(mp);
 				capas.add(om);
 				mapview.postInvalidate();
 				Toast.makeText(MainActivity.mContexto, MainActivity.mContexto.getString(
@@ -102,7 +113,6 @@ public class MapasActivity extends MapActivity{
 		// TODO Auto-generated method stub
 		super.onPause();
 		Log.d("MAPAS", "Se han pausado los mapas");
-		//listPoints.addAll(om.puntos);
 	}
 	
 	
@@ -117,6 +127,7 @@ public class MapasActivity extends MapActivity{
 		// TODO Auto-generated method stub
 		outState.putIntArray("Latitudes", om.getPointsLats());
 		outState.putIntArray("Longitudes", om.getPointsLongs());
+		outState.putIntArray("Colors", om.getColors());
 		super.onSaveInstanceState(outState);
 		Log.d("SALVANDO", "Salvamos estos puntos: " + String.valueOf(
 				om.getPointsLats().length));
@@ -126,17 +137,21 @@ public class MapasActivity extends MapActivity{
 	protected void onRestoreInstanceState(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onRestoreInstanceState(savedInstanceState);
-		restorePoints(savedInstanceState.getIntArray("Latitudes"), savedInstanceState.getIntArray("Longitudes"));
+		restorePoints(savedInstanceState.getIntArray("Latitudes"), savedInstanceState.getIntArray("Longitudes"),
+				savedInstanceState.getIntArray("Colors"));
 		Log.d("RESTORE", "Recuperados " +  String.valueOf(savedInstanceState.getInt("Latitudes")));
 	}
 	
-	private void restorePoints(int[] lats, int[] longs)
+	private void restorePoints(int[] lats, int[] longs, int[] colors)
 	{
 		Log.d("RESTORE", "Recuperamos " + String.valueOf(lats.length));
 		for(int i=0; i < lats.length; i++)
 		{
 			GeoPoint geo = new GeoPoint(lats[i], longs[i]);
-			om.insertarPunto(geo);
+			MyPoint mp = new MyPoint();
+			mp.point = geo;
+			mp.color = colors[i];
+			om.insertPoint(mp);
 		}
 	}
 	
@@ -144,32 +159,43 @@ public class MapasActivity extends MapActivity{
 	
 	public class MyOverlay extends Overlay{
 		
-		private ArrayList<GeoPoint> puntos = new ArrayList<GeoPoint>();
-	
-	    public void insertarPunto(GeoPoint loc){
-			puntos.add(loc);
-		}
+		private ArrayList<MyPoint> points = new ArrayList<MapasActivity.MyPoint>();
 		
+	    public int[] getColors(){
+			int[] lista = new int[points.size()];
+			for(int i=0; i < points.size(); i++)
+			{
+				lista[i] = points.get(i).color;
+			}
+			return lista;
+	    }
+	    
+	    public void insertPoint(MyPoint mp){
+	    	points.add(mp);
+	    }
+	    public void setColors(){
+	    	
+	    }
 		
-		public void insertsPoints(ArrayList<GeoPoint> lis)
+		public void insertsPoints(ArrayList<MyPoint> lis)
 		{
-			puntos.addAll(lis);
+			points.addAll(lis);
 		}
 		
 		public int[] getPointsLats(){
-			int[] lista = new int[puntos.size()];
-			for(int i=0; i < puntos.size(); i++)
+			int[] lista = new int[points.size()];
+			for(int i=0; i < points.size(); i++)
 			{
-				lista[i] = puntos.get(i).getLatitudeE6();
+				lista[i] = points.get(i).point.getLatitudeE6();
 			}
 			return lista;
 		}
 		
 		public int[] getPointsLongs(){
-			int[] lista = new int[puntos.size()];
-			for(int i=0; i < puntos.size(); i++)
+			int[] lista = new  int[points.size()];
+			for(int i=0; i < points.size(); i++)
 			{
-				lista[i] = puntos.get(i).getLongitudeE6();
+				lista[i] = points.get(i).point.getLongitudeE6();
 			}
 			return lista;
 		}
@@ -180,24 +206,24 @@ public class MapasActivity extends MapActivity{
 		{
 			if (shadow == false) 
 			{
-				for(int i=0; i < puntos.size(); i++)
+				for(int i=0; i < points.size(); i++)
 				{	
-					dibujarEnMapa(canvas, mapView, puntos.get(i));
+					drawInMapColor(canvas, mapView, points.get(i).point, points.get(i).color);
 				}	
 			}
 		}
-
-		private void dibujarEnMapa(Canvas can, MapView mv, GeoPoint geo)
+		
+		private void drawInMapColor(Canvas can, MapView mv, GeoPoint geo, int col)
 		{
 			Projection projection = mv.getProjection();
-
+			Log.d("Coordenadas draw", String.valueOf(geo.getLatitudeE6()) + ", " +String.valueOf(geo.getLongitudeE6()));
 			Point centro = new Point();
 			projection.toPixels(geo, centro);
-
+			Log.d("Color puesto", String.valueOf(col));
+			Log.d("Color azul", String.valueOf(Color.BLUE));
 			//Definimos el pincel de dibujo
 			Paint p = new Paint();
-			p.setColor(MainActivity.mSharedPreferences.getInt(
-					MainActivity.mContexto.getResources().getString(R.string.pref_color), Color.BLUE));
+			p.setColor(col);
 			
 			can.drawCircle(centro.x,centro.y, 3, p);
 			
