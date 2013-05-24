@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -26,13 +25,12 @@ import com.google.android.maps.Projection;
 public class MapasActivity extends MapActivity{
 	
 
-	public static Bitmap mbitmap;
 	public MapView mapview = null;
 	public static Handler mHandler;	
 	public MapController mcontrol = null;
 	private Intent servicio = null;
 	private MyOverlay om;
-
+	private static ArrayList<GeoPoint> listPoints;
 	
 	@Override
 	protected void onCreate(Bundle icicle) {
@@ -41,6 +39,7 @@ public class MapasActivity extends MapActivity{
 		setContentView(R.layout.mapas);
 		mapview = (MapView) findViewById(R.id.myMapView);
 		om = new MyOverlay();	
+		Log.d("MAP", "create");
 	}
 	
 	@Override
@@ -53,7 +52,13 @@ public class MapasActivity extends MapActivity{
 		mcontrol.setZoom(9);
 		final List<Overlay> capas = mapview.getOverlays();
 		capas.clear();
+		if(listPoints == null)
+			listPoints = new ArrayList<GeoPoint>();
+		else
+			om.insertsPoints(listPoints);
+		capas.add(om);
 		mapview.postInvalidate();
+
 		mHandler = new Handler(new Callback(){
 			
 		public boolean handleMessage(Message msg) {
@@ -61,6 +66,7 @@ public class MapasActivity extends MapActivity{
 				GeoPoint loc = new GeoPoint((int) (data.getDouble("Latitud")*1000000), (int) (data.getDouble("Longitud")*1000000));
 				mcontrol.animateTo(loc);
 				om.insertarPunto(loc);
+				listPoints.add(loc);
 				capas.add(om);
 				mapview.postInvalidate();
 				Toast.makeText(MainActivity.mContexto, MainActivity.mContexto.getString(
@@ -95,6 +101,7 @@ public class MapasActivity extends MapActivity{
 		// TODO Auto-generated method stub
 		super.onPause();
 		Log.d("MAPAS", "Se han pausado los mapas");
+		listPoints.addAll(om.puntos);
 	}
 	
 	
@@ -119,6 +126,7 @@ public class MapasActivity extends MapActivity{
 		// TODO Auto-generated method stub
 		super.onRestoreInstanceState(savedInstanceState);
 		restorePoints(savedInstanceState.getIntArray("Latitudes"), savedInstanceState.getIntArray("Longitudes"));
+		Log.d("RESTORE", "Recuperados " +  String.valueOf(savedInstanceState.getInt("Latitudes")));
 	}
 	
 	private void restorePoints(int[] lats, int[] longs)

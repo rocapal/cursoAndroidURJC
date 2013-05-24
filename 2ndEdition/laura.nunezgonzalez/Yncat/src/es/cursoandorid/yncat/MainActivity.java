@@ -40,7 +40,6 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				Intent i = new Intent(mContexto, PhotoIntentActivity.class);
 				startActivity(i);
-				
 			}
 		});
 		
