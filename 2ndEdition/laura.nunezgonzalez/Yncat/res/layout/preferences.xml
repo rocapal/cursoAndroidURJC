@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_tittle"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_tittle_color" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+         >
+	<Button 
+	    android:id="@+id/btnblue"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/btn_blue"/>
+	<Button 
+	    android:id="@+id/btnblack"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/btn_black"/>
+	<Button 
+	    android:id="@+id/btnyellow"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/btn_yellow"/>
+	<Button 
+	    android:id="@+id/btnred"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/btn_red"/>
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+         >    	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_tittle_zoom" />
+    <EditText
+        android:id="@+id/edit_zoom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />	
+	<Button 
+	    android:id="@+id/btnsavezoom"
+		android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/btn_save_zoom"/>
+    </LinearLayout>
+</LinearLayout>

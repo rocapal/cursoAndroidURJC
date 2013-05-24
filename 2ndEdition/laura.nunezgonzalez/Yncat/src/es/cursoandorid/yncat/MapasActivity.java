@@ -49,7 +49,8 @@ public class MapasActivity extends MapActivity{
 		mapview.setClickable(true);
 		mapview.setBuiltInZoomControls(true);
 		mcontrol = mapview.getController();
-		mcontrol.setZoom(9);
+		mcontrol.setZoom(MainActivity.mSharedPreferences.getInt(
+				MainActivity.mContexto.getResources().getString(R.string.pref_zoom), 12));
 		final List<Overlay> capas = mapview.getOverlays();
 		capas.clear();
 		if(listPoints == null)
@@ -101,7 +102,7 @@ public class MapasActivity extends MapActivity{
 		// TODO Auto-generated method stub
 		super.onPause();
 		Log.d("MAPAS", "Se han pausado los mapas");
-		listPoints.addAll(om.puntos);
+		//listPoints.addAll(om.puntos);
 	}
 	
 	
@@ -195,14 +196,9 @@ public class MapasActivity extends MapActivity{
 
 			//Definimos el pincel de dibujo
 			Paint p = new Paint();
-			p.setColor(Color.BLUE);
+			p.setColor(MainActivity.mSharedPreferences.getInt(
+					MainActivity.mContexto.getResources().getString(R.string.pref_color), Color.BLUE));
 			
-/*			Bitmap bm = BitmapFactory.decodeResource(
-					mv.getResources(), 
-					R.drawable.ic_launcher);
-			
-			can.drawBitmap(bm, centro.x - bm.getWidth(), 
-					              centro.y - bm.getHeight(), p);*/
 			can.drawCircle(centro.x,centro.y, 3, p);
 			
 		}

@@ -14,5 +14,20 @@
     <string name="btnIntendV">Take Video</string>
     <string name="cannot">Cannot</string>
     <string name="album_name">CameraSample</string>
-        
+    
+    <string name="textbtnpref">Preferencias</string>
+    <string name="pref_color">colormap</string>
+    <string name="pref_zoom">zoom</string> 
+    <string name="pref_name">Nombre</string>
+    <string name="pref_tittle_color">¿De que color desea que sean sus pasos?</string>
+    <string name="pref_tittle_zoom">Elija el zoom del mapa(de 1 a 21)</string>
+    <string name="pref_tittle">Preferencias</string>   
+    <string name="btn_red">Rojo</string>
+    <string name="btn_blue">Azul</string>
+    <string name="btn_yellow">Amarillo</string>
+    <string name="btn_black">Negro</string>
+    <string name="btn_save_zoom">Guardar zoom</string>
+    <string name="color_change">El color se ha cambiado correctamente</string>
+    <string name="msg_zoom_invalid">Valor de zoom invalido: numeros entre 1 y 21</string>
+    <string name="msg_zoom_ok">Valor de zoom cambiado</string>
 </resources>

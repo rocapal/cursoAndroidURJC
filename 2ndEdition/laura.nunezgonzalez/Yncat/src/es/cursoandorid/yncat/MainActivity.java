@@ -14,14 +14,17 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 	
+	public static SharedPreferences  mSharedPreferences;
 	public static Context mContexto;
-	SharedPreferences  mSharedPreferences;
+	public static int mColor;
+	public static int mZoom;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		mContexto = this.getApplicationContext();
+		MainActivity.mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContexto);
 		Button bmap = (Button) findViewById(R.id.btnmapa);
 		bmap.setOnClickListener(new OnClickListener() {
 			
@@ -42,23 +45,19 @@ public class MainActivity extends Activity {
 				startActivity(i);
 			}
 		});
-		
-		mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 				
+		Button bpref = (Button) findViewById(R.id.btnpreferences);
+		bpref.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(mContexto, Preferences.class);
+				startActivity(i);				
+			}
+		});
 	}
 	
-	private void savePreference (String key, String value)
-	{
-		Editor editor = mSharedPreferences.edit();
-		editor.putString(key,value);
-		editor.commit();
-	}
-	
-	private String loadPreference(String key)
-	{
-		return mSharedPreferences.getString(key, null);		
-	}
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

@@ -32,6 +32,7 @@
         <activity android:name="MapasActivity"></activity>
         <service android:name="ServicioLocalizacion"></service>
         <activity android:name="PhotoIntentActivity"></activity>
+        <activity android:name="Preferences"></activity>
     </application>
 
 </manifest>
