@@ -7,11 +7,9 @@
     <uses-sdk
         android:minSdkVersion="10"
         android:targetSdkVersion="10" />
-        <uses-feature android:name="android.hardware.camera" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     
     <application
         android:allowBackup="true"
@@ -29,8 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="MapasActivity"></activity>
-        <service android:name="ServicioLocalizacion"></service>
+        <activity android:name="YncatMapsActivity"></activity>
+        <service android:name="YncatServiceLocalizacion"></service>
         <activity android:name="PhotoIntentActivity"></activity>
         <activity android:name="Preferences"></activity>
         <activity android:name="Hashtag"></activity>

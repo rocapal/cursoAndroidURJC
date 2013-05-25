@@ -21,11 +21,11 @@ public class Preferences extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.preferences);
-		this.mContext = MainActivity.mContexto;
-		if(loadPreference(mContext.getResources().getString(R.string.pref_color),0)==0)
-			savePreference(mContext.getResources().getString(R.string.pref_color), Color.BLUE);
-		if(loadPreference(mContext.getResources().getString(R.string.pref_zoom),-1) < 1)
-			savePreference(mContext.getResources().getString(R.string.pref_zoom), 11);
+		this.mContext = MainActivity.mContext;
+		if(loadPreference(YncatConstants.PREF_COLOR,0)==0)
+			savePreference(YncatConstants.PREF_COLOR, Color.BLUE);
+		if(loadPreference(YncatConstants.PREF_ZOOM,-1) < 1)
+			savePreference(YncatConstants.PREF_ZOOM, 11);
 		Button btnbe = (Button) findViewById(R.id.btnblue);
 		Button btny = (Button) findViewById(R.id.btnyellow);
 		Button btnr = (Button) findViewById(R.id.btnred);
@@ -35,7 +35,7 @@ public class Preferences extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				savePreference(mContext.getResources().getString(R.string.pref_color), Color.BLUE);
+				savePreference(YncatConstants.PREF_COLOR, Color.BLUE);
 				Toast.makeText(mContext, mContext.getResources().getString(R.string.color_change), 
 						Toast.LENGTH_SHORT).show();
 			}
@@ -45,7 +45,7 @@ public class Preferences extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				savePreference(mContext.getResources().getString(R.string.pref_color), Color.YELLOW);
+				savePreference(YncatConstants.PREF_COLOR, Color.YELLOW);
 				Toast.makeText(mContext, mContext.getResources().getString(R.string.color_change), 
 						Toast.LENGTH_SHORT).show();				
 			}
@@ -55,7 +55,7 @@ public class Preferences extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				savePreference(mContext.getResources().getString(R.string.pref_color), Color.RED);
+				savePreference(YncatConstants.PREF_COLOR, Color.RED);
 				Toast.makeText(mContext, mContext.getResources().getString(R.string.color_change), 
 						Toast.LENGTH_SHORT).show();				
 			}
@@ -65,7 +65,7 @@ public class Preferences extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				savePreference(mContext.getResources().getString(R.string.pref_color), Color.BLACK);
+				savePreference(YncatConstants.PREF_COLOR, Color.BLACK);
 				Toast.makeText(mContext, mContext.getResources().getString(R.string.color_change), 
 						Toast.LENGTH_SHORT).show();				
 			}
@@ -82,7 +82,7 @@ public class Preferences extends Activity {
 					int zoom = Integer.parseInt(edzoom.getText().toString());
 						if(zoom < 22 && zoom > 1)
 						{
-							savePreference(mContext.getResources().getString(R.string.pref_zoom), zoom);
+							savePreference(YncatConstants.PREF_ZOOM, zoom);
 							Toast.makeText(mContext, getString(R.string.msg_zoom_ok), Toast.LENGTH_SHORT).show();
 						}else
 							Toast.makeText(mContext, getString(R.string.msg_zoom_invalid), Toast.LENGTH_SHORT).show();
@@ -99,12 +99,6 @@ public class Preferences extends Activity {
 		
 	}
 	
-	private void savePreference (String key, String value)
-	{
-		Editor editor = MainActivity.mSharedPreferences.edit();
-		editor.putString(key,value);
-		editor.commit();
-	}
 	
 	public static String loadPreference(String key)
 	{

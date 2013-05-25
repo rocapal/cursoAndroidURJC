@@ -16,9 +16,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 	
 	public static SharedPreferences  mSharedPreferences;
-	public static Context mContexto;
-	public static int mColor;
-	public static int mZoom;
+	public static Context mContext;
 	public static String searchString;
 	private EditText et;
 	
@@ -26,14 +24,14 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		mContexto = this.getApplicationContext();
-		MainActivity.mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContexto);
+		mContext = this.getApplicationContext();
+		MainActivity.mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
 		Button bmap = (Button) findViewById(R.id.btnmapa);
 		bmap.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(mContexto, MapasActivity.class);
+				Intent i = new Intent(mContext, YncatMapsActivity.class);
 				startActivity(i);
 				
 			}
@@ -45,7 +43,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Intent i = new Intent(mContexto, Preferences.class);
+				Intent i = new Intent(mContext, Preferences.class);
 				startActivity(i);				
 			}
 		});
@@ -59,12 +57,12 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				if (et.getText().toString().length() > 0) {
 					searchString = et.getText().toString();
+					Intent i = new Intent(mContext, Hashtag.class);
+					startActivity(i);
 				}
 				else {
-					Toast.makeText(mContexto, getString(R.string.msg_error_busqueda), Toast.LENGTH_SHORT).show();
-				}
-				Intent i = new Intent(mContexto, Hashtag.class);
-				startActivity(i);				
+					Toast.makeText(mContext, getString(R.string.msg_error_busqueda), Toast.LENGTH_SHORT).show();
+				}				
 			}
 		});
 	}

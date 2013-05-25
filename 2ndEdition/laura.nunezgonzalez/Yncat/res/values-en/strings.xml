@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Yncat</string>
+    <string name="menu_settings">Settings</string>
+    <string name="map_key">0YJ7RMxvssq_fFV0GpzVjjnn-empnTCfBVFdbsA</string>
+    <string name="bmapa">Map</string>
+    
+    <string name="textbtnpref">Preferences</string>
+    <string name="pref_tittle_color">¿What color you want to be his footsteps?</string>
+    <string name="pref_tittle_zoom">Choose the zoom of the map (from 1 to 21)</string>
+    <string name="pref_tittle">Preferences</string>   
+    <string name="btn_red">Red</string>
+    <string name="btn_blue">Blue</string>
+    <string name="btn_yellow">Yellow</string>
+    <string name="btn_black">Black</string>
+    <string name="btn_save_zoom">Save zoom</string>
+    <string name="color_change">The color has been changed successfully</string>
+    <string name="msg_zoom_invalid">Zoom value invalid: numbers between 1 and 21</string>
+    <string name="msg_zoom_ok">Zoom value changed</string>
+    <string name="tbhashtag">Search on Twitter</string>
+   <string name="search">Search string</string>
+   <string name="msg_error_busqueda">You must complete the search string field</string>
+   <string name="msg_not_network">No Internet connection</string>
+
+</resources>
